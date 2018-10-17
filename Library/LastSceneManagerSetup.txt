@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Fight.unity
-=======
 - path: Assets/Scenes/Main.unity
->>>>>>> 360ed938925a8bc4bbc8e981b675a90a30fb3fc1
   isLoaded: 1
   isActive: 1

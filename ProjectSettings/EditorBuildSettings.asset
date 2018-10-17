@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Character Select.unity
+    path: Assets/Scenes/Character_Select.unity
     guid: bbe7b708108a425429cff6bb6d4519a6
   - enabled: 1
     path: Assets/Scenes/Fight.unity
