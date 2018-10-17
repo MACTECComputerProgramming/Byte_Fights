@@ -7,7 +7,7 @@ public class loadScene : MonoBehaviour {
 
     public void load()
     {
-        SceneManager.LoadScene("Character Select");
+        SceneManager.LoadScene("Character_Select");
     }
 	
 		
