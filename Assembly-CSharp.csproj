@@ -53,18 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\SelectButtons.cs" />
-=======
      <Compile Include="Assets\exitProgram.cs" />
      <Compile Include="Assets\loadScene.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
-=======
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
->>>>>>> df2a4920838fed6148461782cc90bf3a26d2a825
->>>>>>> 345517a8fa5d05ab5ddaed15f0eded49aa59d01a
+     <Compile Include="Assets\Scripts\SelectButtons.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
