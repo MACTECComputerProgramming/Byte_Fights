@@ -590,7 +590,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05, y: 0.12}
+  m_Offset: {x: 0.57116115, y: 0.119999886}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -601,7 +601,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.79, y: 7.46}
+  m_Size: {x: 5.032322, y: 7.46}
   m_EdgeRadius: 0
 --- !u!114 &228594939
 MonoBehaviour:
@@ -3788,8 +3788,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ce3c416703549c74c9913063e3dce80f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3f1302786991c16459ea24ede00e6945, type: 3}
+  m_Color: {r: 0.2925533, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3806,8 +3806,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053606176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.65, y: -0.143, z: 0}
-  m_LocalScale: {x: 0.258, y: 0.905, z: 1}
+  m_LocalPosition: {x: 5.082, y: -0.761, z: 0}
+  m_LocalScale: {x: -0.703, y: 0.781015, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3824,18 +3824,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.31670678, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8, y: 7.2}
+    oldSize: {x: 10, y: 10}
     newSize: {x: 12.8, y: 7.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.8, y: 7.2}
+  m_Size: {x: 5.8728886, y: 7.2}
   m_EdgeRadius: 0
 --- !u!50 &2053606180
 Rigidbody2D:
@@ -3848,7 +3848,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 22.96434
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -3863,20 +3863,20 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053606176}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88bf58db56f4c2448bfca0e6cf0aaca9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f0553f5cbb27f84b8d5e815d7e0aa86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 0
-  buttonName: 
+  buttonName: p2LeftJoystickHorizontal
   inputName: 
   hitCheckPoint: {fileID: 0}
   hitCheckRadius: 0
   isHit: 0
   whatIsPlayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 0
   Playerslider: {fileID: 0}
 --- !u!1 &2122066284
 GameObject:
