@@ -66,7 +66,30 @@ public class p2PlayerScript : MonoBehaviour
             }
 
         }
-    }
+    
+     if (Input.GetButton("AButton"))
+        {
+
+            //inset action
+        }
+        if (Input.GetButton("BButton"))
+        {
+
+            //inset action
+        }
+        if (Input.GetButton("XButton"))
+        {
+            //inset action
+
+        } if (Input.GetButton("YButton"))
+        {
+
+            //inset action
+        }
+
+
+
+    
     /*public void HealthBar(double damage)
     {
         Playerslider.value = (float)damage;
