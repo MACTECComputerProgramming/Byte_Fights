@@ -263,7 +263,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.9709315
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -551,7 +551,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228594934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.93, y: -0.27, z: 0}
+  m_LocalPosition: {x: -3.875, y: -0.678, z: 0}
   m_LocalScale: {x: 0.59768105, y: 0.7742959, z: 1}
   m_Children:
   - {fileID: 490784553}
@@ -590,7 +590,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05, y: 0.12}
+  m_Offset: {x: 0.57116115, y: 0.119999886}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -601,7 +601,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.6, y: 7.46}
+  m_Size: {x: 5.032322, y: 7.46}
   m_EdgeRadius: 0
 --- !u!114 &228594939
 MonoBehaviour:
@@ -614,8 +614,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88bf58db56f4c2448bfca0e6cf0aaca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 0
   buttonName: 
-  Player1: {fileID: 228594935}
+  inputName: LeftJoystickHorizontal
+  hitCheckPoint: {fileID: 0}
+  hitCheckRadius: 0.2
+  isHit: 0
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 1
+  Playerslider: {fileID: 0}
 --- !u!1 &237022220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,7 +1540,7 @@ GameObject:
   - component: {fileID: 989336580}
   - component: {fileID: 989336579}
   m_Layer: 0
-  m_Name: P2RemainHealth
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1874,7 +1882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: 188}
+  m_AnchoredPosition: {x: 200, y: 203.36}
   m_SizeDelta: {x: 317.3, y: 43.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1064673749
@@ -1996,9 +2004,8 @@ GameObject:
   - component: {fileID: 1214745319}
   - component: {fileID: 1214745321}
   - component: {fileID: 1214745320}
-  - component: {fileID: 1214745322}
   m_Layer: 0
-  m_Name: P1RemainHealth
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2056,18 +2063,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1214745318}
   m_CullTransparentMesh: 0
---- !u!114 &1214745322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1214745318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c34b505e39fdc46939eb0cfff927c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player1HP: {fileID: 989336579}
 --- !u!1 &1329681634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,7 +2395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000037313, y: 188}
+  m_AnchoredPosition: {x: 0.9, y: 200}
   m_SizeDelta: {x: 50, y: 23.8}
   m_Pivot: {x: 0.49999946, y: 0.49999997}
 --- !u!114 &1400650151
@@ -2415,7 +2410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2429,13 +2424,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 129
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 60
+  m_Text: 100
 --- !u!222 &1400650152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2656,7 +2651,7 @@ Canvas:
   m_GameObject: {fileID: 1493640838}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 81260638}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -3793,8 +3788,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ce3c416703549c74c9913063e3dce80f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3f1302786991c16459ea24ede00e6945, type: 3}
+  m_Color: {r: 0.2925533, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3811,8 +3806,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053606176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.65, y: -0.143, z: 0}
-  m_LocalScale: {x: 0.258, y: 0.905, z: 1}
+  m_LocalPosition: {x: 5.082, y: -0.761, z: 0}
+  m_LocalScale: {x: -0.703, y: 0.781015, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3829,18 +3824,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.31670678, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.8, y: 7.2}
+    oldSize: {x: 10, y: 10}
     newSize: {x: 12.8, y: 7.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.8, y: 7.2}
+  m_Size: {x: 5.8728886, y: 7.2}
   m_EdgeRadius: 0
 --- !u!50 &2053606180
 Rigidbody2D:
@@ -3853,7 +3848,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 22.96434
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -3868,13 +3863,21 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053606176}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88bf58db56f4c2448bfca0e6cf0aaca9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f0553f5cbb27f84b8d5e815d7e0aa86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonName: 
-  Player1: {fileID: 0}
+  jumpForce: 0
+  buttonName: p2LeftJoystickHorizontal
+  inputName: 
+  hitCheckPoint: {fileID: 0}
+  hitCheckRadius: 0
+  isHit: 0
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 0
+  Playerslider: {fileID: 0}
 --- !u!1 &2122066284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3908,7 +3911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: 192.44}
+  m_AnchoredPosition: {x: -197.5, y: 203.3}
   m_SizeDelta: {x: 317.3, y: 43.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122066286
