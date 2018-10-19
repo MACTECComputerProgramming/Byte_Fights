@@ -23,7 +23,7 @@ public class p2PlayerScript : MonoBehaviour
     public LayerMask whatIsPlayer;
     double damage = 0;
     private Rigidbody2D theRB;
-
+    public SpriteRenderer Player2;
     public Slider Playerslider;
 
     
@@ -45,10 +45,12 @@ public class p2PlayerScript : MonoBehaviour
         movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
         if (Input.GetAxis("p2LeftJoystickHorizontal") > 0)
         {
+            Player2.flipX = true;
             theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
         }
         else if (Input.GetAxis("p2LeftJoystickHorizontal") < 0)
         {
+            Player2.flipX = false;
             theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
         }
         else

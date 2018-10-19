@@ -614,16 +614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88bf58db56f4c2448bfca0e6cf0aaca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 0
-  buttonName: 
-  inputName: LeftJoystickHorizontal
-  hitCheckPoint: {fileID: 0}
-  hitCheckRadius: 0.2
-  isHit: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1
-  Playerslider: {fileID: 0}
+  buttonName: LeftJoystickHorizontal
+  Player1: {fileID: 228594935}
 --- !u!1 &237022220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3877,6 +3869,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 0
+  Player2: {fileID: 2053606177}
   Playerslider: {fileID: 0}
 --- !u!1 &2122066284
 GameObject:
