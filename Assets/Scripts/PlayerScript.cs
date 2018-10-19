@@ -7,7 +7,8 @@ public class PlayerScript : MonoBehaviour
 {
     public string buttonName;
     private Transform thisTransform;
-    static public double damage = 1;
+    static public double damage = 10;
+    static public double health = 100;
     private Rigidbody2D theRB;
     public SpriteRenderer Player1;
 
@@ -19,11 +20,22 @@ public class PlayerScript : MonoBehaviour
         theRB = GetComponent<Rigidbody2D>();
     }
 
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "Player 1")
+        {
+           
+            health -= damage;
+
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+       
         //isHit = Physics2D.OverlapCircle(hitCheckPoint.position, hitCheckRadius, whatIsPlayer);
-
+      
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("LeftJoystickHorizontal");
@@ -47,5 +59,12 @@ public class PlayerScript : MonoBehaviour
 
 
         }
+        /*if(hit)
+         * {
+         *  damage = Random Numb<100;
+         *  health = health-damage;
+         *  }*/
+
+        
     }
 }
