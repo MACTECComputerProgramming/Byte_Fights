@@ -309,6 +309,7 @@
     <Compile Include="Assets\exitProgram.cs" />
     <Compile Include="Assets\loadScene.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\HealthScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
   </ItemGroup>
   <ItemGroup>
