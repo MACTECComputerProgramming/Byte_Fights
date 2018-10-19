@@ -26,7 +26,7 @@ public class p2PlayerScript : MonoBehaviour
     public SpriteRenderer Player2;
     public Slider Playerslider;
 
-    
+
     // Use this for initialization
     void Start()
     {
@@ -39,7 +39,7 @@ public class p2PlayerScript : MonoBehaviour
     void Update()
     {
         //isHit = Physics2D.OverlapCircle(hitCheckPoint.position, hitCheckRadius, whatIsPlayer);
-        
+
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
@@ -62,12 +62,12 @@ public class p2PlayerScript : MonoBehaviour
             if (isHit)
             {
                 damage += .1;
-                
+
             }
 
         }
-    
-     if (Input.GetButton("AButton"))
+
+        if (Input.GetButton("AButton"))
         {
 
             //inset action
@@ -89,20 +89,21 @@ public class p2PlayerScript : MonoBehaviour
 
 
 
-    
-    /*public void HealthBar(double damage)
-    {
-        Playerslider.value = (float)damage;
+
+        /*public void HealthBar(double damage)
+        {
+            Playerslider.value = (float)damage;
 
 
+        }
+     /*   internal void SetControllerNumber (int number)
+        {
+            controllerNumber = number;
+            horizontalAxis = "J" + controllerNumber + "LeftJoystickHorizontal";
+            verticalAxis = "J" + controllerNumber + "LeftJoystickVertical";
+            aButton = "J" + controllerNumber + "A";
+            bButton = "J" + controllerNumber + "B";
+            triggerAxis = "J" + controllerNumber + "Trigger";
+        }*/
     }
- /*   internal void SetControllerNumber (int number)
-    {
-        controllerNumber = number;
-        horizontalAxis = "J" + controllerNumber + "LeftJoystickHorizontal";
-        verticalAxis = "J" + controllerNumber + "LeftJoystickVertical";
-        aButton = "J" + controllerNumber + "A";
-        bButton = "J" + controllerNumber + "B";
-        triggerAxis = "J" + controllerNumber + "Trigger";
-    }*/
 }
