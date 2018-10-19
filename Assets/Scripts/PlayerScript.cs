@@ -5,33 +5,17 @@ using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
-    private string horizontalAxis;
-    private string verticalAxis;
-    private string aButton;
-    private string bButton;
-    private string triggerAxis;
-    private int controllerNumber;
-    public float jumpForce;
     public string buttonName;
-    private Vector2 startPos;
-    public string inputName;
     private Transform thisTransform;
-
-    public Transform hitCheckPoint;
-    public float hitCheckRadius;
-    public bool isHit;
-    public LayerMask whatIsPlayer;
-    double damage = 0;
+    static public double damage = 1;
     private Rigidbody2D theRB;
+    public SpriteRenderer Player1;
 
-    public Slider Playerslider;
 
-    
     // Use this for initialization
     void Start()
     {
         thisTransform = transform;
-        startPos = this.transform.position;
         theRB = GetComponent<Rigidbody2D>();
     }
 
@@ -39,45 +23,29 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         //isHit = Physics2D.OverlapCircle(hitCheckPoint.position, hitCheckRadius, whatIsPlayer);
-        
+
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("LeftJoystickHorizontal");
-        if (Input.GetAxis("LeftJoystickHorizontal") > 0)
+        if (Input.GetAxis("LeftJoystickHorizontal") == 1)
         {
+            Player1.flipX = false;
             theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
         }
-        else if (Input.GetAxis("LeftJoystickHorizontal") < 0)
+        else if (Input.GetAxis("LeftJoystickHorizontal") == -1)
         {
+            Player1.flipX = true;
             theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
         }
         else
         {
+            
             theRB.velocity = new Vector2(0, theRB.velocity.y);
         }
-        if (Input.GetButton("Abutton"))
+        if (Input.GetButton("AButton"))
         {
-            if (isHit)
-            {
-                damage += .1;
-                
-            }
+
 
         }
     }
-    /*public void HealthBar(double damage)
-    {
-        Playerslider.value = (float)damage;
-
-
-    }
- /*   internal void SetControllerNumber (int number)
-    {
-        controllerNumber = number;
-        horizontalAxis = "J" + controllerNumber + "LeftJoystickHorizontal";
-        verticalAxis = "J" + controllerNumber + "LeftJoystickVertical";
-        aButton = "J" + controllerNumber + "A";
-        bButton = "J" + controllerNumber + "B";
-        triggerAxis = "J" + controllerNumber + "Trigger";
-    }*/
 }
