@@ -10,19 +10,25 @@ public class countdown : MonoBehaviour
     int seconds;
     public Text timer;
     void Update()
-{
-    while (totalTime > 0 || PlayerScript.health > 0 || p2PlayerScript.health > 0)
     {
-        totalTime -= 1;
-        seconds = Mathf.RoundToInt(totalTime);
-        string formattedSeconds = seconds.ToString();
-        timer.text = formattedSeconds; 
-    }
-    if (seconds <= 0 || PlayerScript.health <= 0 || p2PlayerScript.health <= 0)
+
+        while (totalTime > 0)
+        {
+            totalTime -= Time.deltaTime;
+            seconds = Mathf.RoundToInt(totalTime);
+            string formattedSeconds = seconds.ToString();
+            timer.text = formattedSeconds;
+        }
+        while (totalTime <= 0)
+        {
+            GameOver();
+        }
+    
+    if (PlayerScript.health <= 0 || p2PlayerScript.health <= 0)
     {
         GameOver();
     }
-}
+    }
    
     void GameOver()
     {
