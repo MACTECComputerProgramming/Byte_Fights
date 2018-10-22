@@ -1185,10 +1185,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1027694235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f4bd780142ea994893235adc0e199a6, type: 3}
+  m_Script: {fileID: 11500000, guid: c4f4e59ef1f73f44eb98a4ac0436a8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonName: LeftJoystickVertical
+  buttonName: 
   Player1: {fileID: 1027694239}
 --- !u!212 &1027694239 stripped
 SpriteRenderer:

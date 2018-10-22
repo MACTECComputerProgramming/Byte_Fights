@@ -7,7 +7,7 @@ public class PlayerInfo : MonoBehaviour {
 
     static private string player1char;
     static private string player2char;
-
+    
     static public string Player1char
     {
         get
@@ -36,7 +36,7 @@ public class PlayerInfo : MonoBehaviour {
 
     static public bool P1start = false;
     static public bool P2start = false;
-
+    bool fightstart = true;
 
 
     // Use this for initialization
@@ -62,9 +62,11 @@ public class PlayerInfo : MonoBehaviour {
         {
             P2start = true;
         }
-        if(P1start == true|| P2start == true)
+        if((P1start == true || P2start == true )&& fightstart == true)
         {
             SceneManager.LoadScene("Fight");
+            fightstart = false;
+            
         }
 	}
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1Curser : MonoBehaviour {
+public class P1Cursor : MonoBehaviour {
     public string buttonName;
     private Transform thisTransform;
     private Rigidbody2D theRB;
@@ -19,40 +19,34 @@ public class P1Curser : MonoBehaviour {
     }
         void Movement()
         {
-        float movespeed = 1;
-        movespeed = movespeed * Input.GetAxis("LeftJoystickHorizontal");
+        float movespeedy = -1;
+        float movespeedx = 1;
+        movespeedx = movespeedx * Input.GetAxis("LeftJoystickHorizontal");
+        movespeedy = movespeedy * Input.GetAxis("LeftJoystickVertical");
         if (Input.GetAxis("LeftJoystickHorizontal") == 1)
         {
           
-            theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
+            theRB.velocity = new Vector2(movespeedx, theRB.velocity.y);
         }
         else if (Input.GetAxis("LeftJoystickHorizontal") == -1)
         {
             
-            theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
-        }
-        else
-        {
-
-            theRB.velocity = new Vector2(0, theRB.velocity.y);
-        }
-
-      
-        movespeed = movespeed * Input.GetAxis("LeftJoystickVertical");
-        if (Input.GetAxis("LeftJoystickVertical") == 1)
-        {
-       
-            theRB.velocity = new Vector2(theRB.velocity.y,movespeed );
+            theRB.velocity = new Vector2(movespeedx, theRB.velocity.y);
         }
         else if (Input.GetAxis("LeftJoystickVertical") == -1)
         {
+       
+            theRB.velocity = new Vector2(theRB.velocity.x,movespeedy );
+        }
+        else if (Input.GetAxis("LeftJoystickVertical") == 1)
+        {
            
-            theRB.velocity = new Vector2(theRB.velocity.y,movespeed);
+            theRB.velocity = new Vector2(theRB.velocity.x,movespeedy);
         }
         else
         {
 
-            theRB.velocity = new Vector2(0, theRB.velocity.y);
+            theRB.velocity = new Vector2(0, 0 );
         }
         }
 	}

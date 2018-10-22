@@ -21,40 +21,34 @@ public class P2Cursor : MonoBehaviour {
     }
     void Movement()
     {
-        float movespeed = 1;
-        movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
+        float movespeedx = 1;
+        float movespeedy = -1;
+        movespeedx = movespeedx * Input.GetAxis("p2LeftJoystickHorizontal"); 
+        movespeedy = movespeedy * Input.GetAxis("p2LeftJoystickVertical");
         if (Input.GetAxis("p2LeftJoystickHorizontal") == 1)
         {
 
-            theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
+            theRB.velocity = new Vector2(movespeedx, theRB.velocity.y);
         }
         else if (Input.GetAxis("p2LeftJoystickHorizontal") == -1)
         {
 
-            theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
+            theRB.velocity = new Vector2(movespeedx, theRB.velocity.y);
         }
-        else
+        else if (Input.GetAxis("p2LeftJoystickVertical") == 1)
         {
 
-            theRB.velocity = new Vector2(0, theRB.velocity.y);
-        }
-
-
-        movespeed = movespeed * Input.GetAxis("p2LeftJoystickVertical");
-        if (Input.GetAxis("p2LeftJoystickVertical") == 1)
-        {
-
-            theRB.velocity = new Vector2(theRB.velocity.y, movespeed);
+            theRB.velocity = new Vector2(theRB.velocity.x, movespeedy);
         }
         else if (Input.GetAxis("p2LeftJoystickVertical") == -1)
         {
 
-            theRB.velocity = new Vector2(theRB.velocity.y, movespeed);
+            theRB.velocity = new Vector2(theRB.velocity.x, movespeedy);
         }
         else
         {
 
-            theRB.velocity = new Vector2(0, theRB.velocity.y);
+            theRB.velocity = new Vector2(0, 0);
         }
     }
 }
