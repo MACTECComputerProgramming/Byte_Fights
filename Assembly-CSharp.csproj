@@ -53,17 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\CameraScript.cs" />
+     <Compile Include="Assets\Scripts\countdown.cs" />
      <Compile Include="Assets\Scripts\exitProgram.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\loadScene.cs" />
-=======
-     <Compile Include="Assets\exitProgram.cs" />
-     <Compile Include="Assets\loadScene.cs" />
-     <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\p2PlayerScript.cs" />
->>>>>>> d17499111b64bdcd9c734d26a1d533049084ea1c
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\SelectButtons.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
