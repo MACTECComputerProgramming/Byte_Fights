@@ -57,8 +57,24 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetButton("AButton"))
         {
 
-
+            //inset action
         }
+        if (Input.GetButton("BButton"))
+        {
+
+            //inset action
+        }
+        if (Input.GetButton("XButton"))
+        {
+            //inset action
+
+        } if (Input.GetButton("YButton"))
+        {
+
+            //inset action
+        }
+
+
         /*if(hit)
          * {
          *  damage = Random Numb<100;

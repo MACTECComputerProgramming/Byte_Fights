@@ -23,10 +23,10 @@ public class p2PlayerScript : MonoBehaviour
     public LayerMask whatIsPlayer;
     double damage = 0;
     private Rigidbody2D theRB;
-
+    public SpriteRenderer Player2;
     public Slider Playerslider;
 
-    
+
     // Use this for initialization
     void Start()
     {
@@ -39,16 +39,18 @@ public class p2PlayerScript : MonoBehaviour
     void Update()
     {
         //isHit = Physics2D.OverlapCircle(hitCheckPoint.position, hitCheckRadius, whatIsPlayer);
-        
+
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
         if (Input.GetAxis("p2LeftJoystickHorizontal") > 0)
         {
+            Player2.flipX = true;
             theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
         }
         else if (Input.GetAxis("p2LeftJoystickHorizontal") < 0)
         {
+            Player2.flipX = false;
             theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
         }
         else
@@ -60,24 +62,48 @@ public class p2PlayerScript : MonoBehaviour
             if (isHit)
             {
                 damage += .1;
-                
+
             }
 
         }
-    }
-    /*public void HealthBar(double damage)
-    {
-        Playerslider.value = (float)damage;
+
+        if (Input.GetButton("AButton"))
+        {
+
+            //inset action
+        }
+        if (Input.GetButton("BButton"))
+        {
+
+            //inset action
+        }
+        if (Input.GetButton("XButton"))
+        {
+            //inset action
+
+        } if (Input.GetButton("YButton"))
+        {
+
+            //inset action
+        }
 
 
+
+
+        /*public void HealthBar(double damage)
+        {
+            Playerslider.value = (float)damage;
+
+
+        }
+     /*   internal void SetControllerNumber (int number)
+        {
+            controllerNumber = number;
+            horizontalAxis = "J" + controllerNumber + "LeftJoystickHorizontal";
+            verticalAxis = "J" + controllerNumber + "LeftJoystickVertical";
+            aButton = "J" + controllerNumber + "A";
+            bButton = "J" + controllerNumber + "B";
+            triggerAxis = "J" + controllerNumber + "Trigger";
+        }*/
     }
- /*   internal void SetControllerNumber (int number)
-    {
-        controllerNumber = number;
-        horizontalAxis = "J" + controllerNumber + "LeftJoystickHorizontal";
-        verticalAxis = "J" + controllerNumber + "LeftJoystickVertical";
-        aButton = "J" + controllerNumber + "A";
-        bButton = "J" + controllerNumber + "B";
-        triggerAxis = "J" + controllerNumber + "Trigger";
-    }*/
 }
