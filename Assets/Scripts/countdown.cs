@@ -6,39 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class countdown : MonoBehaviour
 {
-    public Text time;
-    public float targetTime = 60;
-    public float timee = 100;
-    public bool timeup = true;
-    public Renderer rend;
-    public bool pause = true;
-
-
-    void Awake()
-    {
-        //Stops timer from being removed
-        DontDestroyOnLoad(GameObject.Find("Canvas"));
-    }
-
-
-    // Update is called once per frame
+    public float totalTime = 60;
+    int seconds;
+    public Text timer;
     void Update()
+{
+    while (totalTime > 0 || PlayerScript.health > 0 || p2PlayerScript.health > 0)
     {
-
-        if (pause == true)
-        {
-            do
-            {
-                targetTime -= Time.deltaTime;
-                string timerString = targetTime.ToString();
-                time.text = timerString;
-            } while (timeup);
-
-        }
-
-        if (targetTime <= 0)
-        {
-            //load game over
-        }
+        totalTime -= 1;
+        seconds = Mathf.RoundToInt(totalTime);
+        string formattedSeconds = seconds.ToString();
+        timer.text = formattedSeconds; 
+    }
+    if (seconds <= 0 || PlayerScript.health <= 0 || p2PlayerScript.health <= 0)
+    {
+        GameOver();
+    }
+}
+   
+    void GameOver()
+    {
+        Debug.Log("Game Over");
     }
 }

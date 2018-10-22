@@ -54,11 +54,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraScript.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\countdown.cs" />
-=======
      <Compile Include="Assets\Scripts\Curser.cs" />
->>>>>>> 449477b666c7257e69554209a0004fa73fe6a2d5
      <Compile Include="Assets\Scripts\exitProgram.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\loadScene.cs" />
