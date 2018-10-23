@@ -7,28 +7,24 @@ using UnityEngine.SceneManagement;
 public class countdown : MonoBehaviour
 {
     public float totalTime = 60;
-    int seconds;
+    int second;
     public Text timer;
-    void Update()
-    {
 
+   public void Update()
+    {
         while (totalTime > 0)
         {
             totalTime -= Time.deltaTime;
-            seconds = Mathf.RoundToInt(totalTime);
-            string formattedSeconds = seconds.ToString();
+            totalTime = Mathf.RoundToInt(totalTime);
+            string formattedSeconds = totalTime.ToString();
             timer.text = formattedSeconds;
+            Debug.Log("Run");
+           // yield return new WaitForSeconds(1);
         }
-        while (totalTime <= 0)
-        {
-            GameOver();
-        }
+    }
+
     
-    if (PlayerScript.health <= 0 || p2PlayerScript.health <= 0)
-    {
-        GameOver();
-    }
-    }
+    
    
     void GameOver()
     {
