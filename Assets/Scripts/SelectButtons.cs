@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectButtons : MonoBehaviour {
     private GameObject player1;
@@ -18,13 +19,14 @@ public class SelectButtons : MonoBehaviour {
        
 	}
 
-    private void OnTriggerEnter(Collider coll)
+    private void OnTriggerStay(Collider coll)
     {
         if (Input.GetButton("P1AButton"))
         {
             if(coll.gameObject == player1)
             {
                 PlayerInfo.Player1char = "Pepe";
+                
             }
         }
         if (Input.GetButton("P2AButton"))

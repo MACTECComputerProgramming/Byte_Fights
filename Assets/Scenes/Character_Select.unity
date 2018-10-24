@@ -305,7 +305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalScale.x
@@ -369,6 +369,11 @@ Prefab:
     - target: {fileID: 1604752252333832, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_Name
       value: P2Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467, type: 2}
@@ -739,7 +744,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -968,6 +973,11 @@ Prefab:
       propertyPath: m_Name
       value: P1Cursor
       objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: a99557211327c724b902a25e9f850467, type: 2}
@@ -1032,7 +1042,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &886780990
 GameObject:
@@ -1068,7 +1078,7 @@ RectTransform:
   - {fileID: 1802859325}
   - {fileID: 403423772}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1120,7 +1130,7 @@ Canvas:
   m_GameObject: {fileID: 886780990}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 108055202}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1170,7 +1180,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027694235 stripped
 GameObject:
