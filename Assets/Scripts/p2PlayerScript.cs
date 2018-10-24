@@ -67,7 +67,7 @@ public class p2PlayerScript : MonoBehaviour
         {
             theRB.velocity = new Vector2(0, theRB.velocity.y);
         }
-        if (Input.GetButton("Abutton"))
+        if (Input.GetButton("P2AButton"))
         {
             if (isHit)
             {
@@ -77,21 +77,21 @@ public class p2PlayerScript : MonoBehaviour
 
         }
 
-        if (Input.GetButton("AButton"))
+        if (Input.GetButton("P2AButton"))
         {
 
             //inset action
         }
-        if (Input.GetButton("BButton"))
+        if (Input.GetButton("P2BButton"))
         {
 
             //inset action
         }
-        if (Input.GetButton("XButton"))
+        if (Input.GetButton("P2XButton"))
         {
             //inset action
 
-        } if (Input.GetButton("YButton"))
+        } if (Input.GetButton("P2YButton"))
         {
 
             //inset action
