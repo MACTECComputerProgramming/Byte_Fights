@@ -2246,7 +2246,6 @@ GameObject:
   - component: {fileID: 1400650150}
   - component: {fileID: 1400650152}
   - component: {fileID: 1400650151}
-  - component: {fileID: 1400650153}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -2284,7 +2283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2294,17 +2293,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 129
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 60
+  m_Text: 100
 --- !u!222 &1400650152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2312,19 +2311,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400650149}
   m_CullTransparentMesh: 0
---- !u!114 &1400650153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1400650149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42293dc9318221b49b841d5b58092905, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalTime: 60
-  timer: {fileID: 1400650151}
 --- !u!1 &1454130545
 GameObject:
   m_ObjectHideFlags: 0

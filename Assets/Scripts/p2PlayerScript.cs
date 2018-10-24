@@ -22,7 +22,6 @@ public class p2PlayerScript : MonoBehaviour
     public bool isHit;
     public LayerMask whatIsPlayer;
     double damage = 0;
-    static public double health = 100;
     private Rigidbody2D theRB;
     public SpriteRenderer Player2;
     public Slider Playerslider;
@@ -36,15 +35,6 @@ public class p2PlayerScript : MonoBehaviour
         theRB = GetComponent<Rigidbody2D>();
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Player 1")
-        {
-
-            health -= damage;
-
-        }
-    }
     // Update is called once per frame
     void Update()
     {

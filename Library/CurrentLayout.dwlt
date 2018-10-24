@@ -13,30 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 145
-    y: 119
-    width: 1628
-    height: 913
-<<<<<<< HEAD
-=======
-    x: -12
-    y: 89
-    width: 1920
-    height: 997
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
     x: 0
     y: 43
     width: 1920
     height: 997
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -62,22 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 681, y: 342}
-  m_MaxSize: {x: 12006, y: 8042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  controlID: 9
-=======
-  controlID: 88
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-  controlID: 106
->>>>>>> parent of a1e8154... broke stuff
-=======
-  controlID: 9
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+  controlID: 22
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,20 +60,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 1298
-=======
-    x: 1643
->>>>>>> parent of a1e8154... broke stuff
+    x: 1531
     y: 0
-    width: 277
+    width: 389
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -127,23 +87,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 321
-    height: 522
-=======
-    width: 357
+    width: 379
     height: 573
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    width: 295
-    height: 676
->>>>>>> parent of a1e8154... broke stuff
-=======
-    width: 321
-    height: 522
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -166,29 +111,16 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    y: 522
-    width: 1298
-    height: 341
+    y: 573
+    width: 1531
+    height: 374
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
-=======
-    y: 676
-    width: 1643
-    height: 271
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
->>>>>>> parent of a1e8154... broke stuff
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 1
+  m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -272,36 +204,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    width: 1298
-    height: 863
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
-  vertical: 1
-  controlID: 10
-<<<<<<< HEAD
-=======
-    width: 1446
+    width: 1531
     height: 947
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 89
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    width: 1643
-    height: 947
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
-  vertical: 1
-  controlID: 107
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+  controlID: 23
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,36 +228,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    width: 1298
-    height: 522
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
-  vertical: 0
-  controlID: 11
-<<<<<<< HEAD
-=======
-    width: 1446
+    width: 1531
     height: 573
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 90
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    width: 1643
-    height: 676
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
-  vertical: 0
-  controlID: 108
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+  controlID: 24
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,18 +248,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 321
-=======
-    x: 295
->>>>>>> parent of a1e8154... broke stuff
+    x: 379
     y: 0
-    width: 1348
-    height: 676
+    width: 1152
+    height: 573
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
@@ -430,30 +306,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 145
-    y: 690
-    width: 1296
-    height: 320
-<<<<<<< HEAD
-=======
     x: 0
-    y: 592
-    width: 1444
+    y: 665
+    width: 1529
     height: 353
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    x: 0
-    y: 768
-    width: 1641
-    height: 250
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -467,73 +323,36 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    - Assets/Scenes
+    - Assets/Images
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
-<<<<<<< HEAD
-=======
-    - Assets/Scripts
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scripts
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    - Assets
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/TextMesh Pro
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+  - Assets/Images
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\CS180\Documents\GitHub\Byte_Fights
+  m_LastProjectPath: C:\Users\3dprint\Documents\GitHub\Byte_Fights
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 000a0000
-    m_LastClickedID: 2560
-    m_ExpandedIDs: 00000000c4090000460a0000442f0000462f000000ca9a3b
-<<<<<<< HEAD
-=======
-    m_SelectedIDs: 7a2a0000
-    m_LastClickedID: 10874
-    m_ExpandedIDs: 000000000a2a000000ca9a3b
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: b82f0000
-    m_LastClickedID: 12216
-    m_ExpandedIDs: 00000000b82f00003c30000062300000fc30000000ca9a3bffffff7f
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    m_SelectedIDs: 920a0000
+    m_LastClickedID: 2706
+    m_ExpandedIDs: 00000000c0090000440a0000920a0000b62e0000b82e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Images
+      m_OriginalName: Images
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 2706
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -545,19 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000c4090000460a0000442f0000462f0000
-=======
-    m_ExpandedIDs: 000000000a2a0000
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    m_ExpandedIDs: 00000000b82f0000
->>>>>>> parent of a1e8154... broke stuff
-=======
-    m_ExpandedIDs: 00000000c4090000460a0000442f0000462f0000
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    m_ExpandedIDs: 00000000c0090000440a0000920a0000b62e0000b82e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -584,19 +391,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-<<<<<<< HEAD
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 
-<<<<<<< HEAD
-=======
-    m_ExpandedInstanceIDs: c6230000
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300004a2b0000ac2b0000
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -612,7 +408,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -622,7 +418,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 248
+  m_DirectoriesAreaWidth: 115
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -643,30 +439,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 1445
-    y: 168
-    width: 328
-    height: 842
-<<<<<<< HEAD
-=======
-    x: 1448
-    y: 19
-    width: 472
-    height: 926
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    x: 1645
+    x: 1533
     y: 92
-    width: 275
+    width: 387
     height: 926
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -697,48 +473,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 145
-    y: 168
-    width: 319
-    height: 501
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 922f0000
-    m_LastClickedID: 12178
-    m_ExpandedIDs: 6ef7ffffe6fbffff00000000922f0000
-<<<<<<< HEAD
-=======
-    x: 0
-    y: 19
-    width: 355
-    height: 552
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2280000
-    m_LastClickedID: 0
-    m_ExpandedIDs: e6fbffff00000000e62d0000
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
     x: 0
     y: 92
-    width: 293
-    height: 655
+    width: 377
+    height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ccb4fffffee9ffffc2f2ffff0000000002350000
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    m_ExpandedIDs: e6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -754,7 +498,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 4}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
   - Character_Select
@@ -782,58 +526,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 468
-    y: 168
-    width: 973
-    height: 501
-<<<<<<< HEAD
-=======
-    x: 347
-    y: 138
-    width: 1085
-    height: 552
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    x: 297
+    x: 381
     y: 92
-    width: 1344
-    height: 655
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    width: 1148
+    height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 111.836541739862
+  lastFramingTime: 0
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 435.04532, y: 269.3358, z: 351.53906}
-    speed: 2
-    m_Value: {x: 435.04532, y: 269.3358, z: 351.53906}
-=======
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    m_Target: {x: 643.4849, y: 412.02216, z: 15.834744}
-    speed: 2
-    m_Value: {x: 643.4849, y: 412.02216, z: 15.834744}
->>>>>>> parent of a1e8154... broke stuff
-=======
-    m_Target: {x: 435.04532, y: 269.3358, z: 351.53906}
-    speed: 2
-    m_Value: {x: 435.04532, y: 269.3358, z: 351.53906}
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -865,27 +571,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: 18.781502
-    speed: 2
-    m_Value: 18.781502
-=======
     m_Target: 10
     speed: 2
     m_Value: 10
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    m_Target: 929.1718
-    speed: 2
-    m_Value: 929.1718
->>>>>>> parent of a1e8154... broke stuff
-=======
-    m_Target: 18.781502
-    speed: 2
-    m_Value: 18.781502
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -917,30 +605,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    x: 468
-    y: 168
-    width: 973
-    height: 501
-<<<<<<< HEAD
-=======
-    x: 381
-    y: 92
-    width: 1148
-    height: 552
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    x: 297
-    y: 92
-    width: 1344
-    height: 655
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    x: 507
+    y: 94
+    width: 1532
+    height: 790
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -952,30 +620,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-    m_HBaseRangeMin: -486.5
-    m_HBaseRangeMax: 486.5
-    m_VBaseRangeMin: -242
-    m_VBaseRangeMax: 242
-<<<<<<< HEAD
-=======
-    m_HBaseRangeMin: -574
-    m_HBaseRangeMax: 574
-    m_VBaseRangeMin: -267.5
-    m_VBaseRangeMax: 267.5
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-    m_HBaseRangeMin: -672
-    m_HBaseRangeMax: 672
-    m_VBaseRangeMin: -319
-    m_VBaseRangeMax: 319
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    m_HBaseRangeMin: -766
+    m_HBaseRangeMax: 766
+    m_VBaseRangeMin: -386.5
+    m_VBaseRangeMax: 386.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -993,77 +641,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-      width: 973
-      height: 484
-    m_Scale: {x: 1.049882, y: 1.049882}
-    m_Translation: {x: 491.14148, y: 244.02382}
-<<<<<<< HEAD
-=======
-      width: 1148
-      height: 535
+      width: 1532
+      height: 773
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 574, y: 267.5}
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-      width: 1344
-      height: 638
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 672, y: 319}
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+    m_Translation: {x: 766, y: 386.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
-      x: -467.80634
-      y: -232.42975
-      width: 926.77075
-      height: 461.00415
-<<<<<<< HEAD
-=======
-      x: -574
-      y: -267.5
-      width: 1148
-      height: 535
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-      x: -672
-      y: -319
-      width: 1344
-      height: 638
->>>>>>> parent of a1e8154... broke stuff
-=======
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+      x: -766
+      y: -386.5
+      width: 1532
+      height: 773
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastWindowPixelSize: {x: 973, y: 501}
-=======
-  m_LastWindowPixelSize: {x: 1148, y: 552}
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
-=======
-  m_LastWindowPixelSize: {x: 1344, y: 655}
->>>>>>> parent of a1e8154... broke stuff
-=======
-  m_LastWindowPixelSize: {x: 973, y: 501}
->>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+  m_CurrentColorSpace: 1
+  m_LastWindowPixelSize: {x: 1532, y: 790}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1088,8 +684,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 768
-    width: 1641
-    height: 250
+    x: 8
+    y: 718
+    width: 1366
+    height: 308
   m_PersistentViewDataDictionary: {fileID: 0}
