@@ -54,21 +54,21 @@ public class PlayerScript : MonoBehaviour
             
             theRB.velocity = new Vector2(0, theRB.velocity.y);
         }
-        if (Input.GetButton("P1AButton"))
+        if (Input.GetButton("AButton"))
         {
 
             //inset action
         }
-        if (Input.GetButton("P1BButton"))
+        if (Input.GetButton("BButton"))
         {
 
             //inset action
         }
-        if (Input.GetButton("P1XButton"))
+        if (Input.GetButton("XButton"))
         {
             //inset action
 
-        } if (Input.GetButton("P1YButton"))
+        } if (Input.GetButton("YButton"))
         {
 
             //inset action

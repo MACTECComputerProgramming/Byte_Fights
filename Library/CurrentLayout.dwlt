@@ -14,6 +14,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 145
     y: 119
     width: 1628
@@ -24,6 +25,12 @@ MonoBehaviour:
     width: 1920
     height: 997
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
+>>>>>>> parent of a1e8154... broke stuff
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -47,16 +54,20 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1628
-    height: 863
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+    width: 1920
+    height: 947
+  m_MinSize: {x: 681, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 9
 =======
   controlID: 88
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+  controlID: 106
+>>>>>>> parent of a1e8154... broke stuff
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,10 +83,14 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1298
+=======
+    x: 1643
+>>>>>>> parent of a1e8154... broke stuff
     y: 0
-    width: 330
-    height: 863
+    width: 277
+    height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 =======
@@ -108,12 +123,17 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 321
     height: 522
 =======
     width: 357
     height: 573
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    width: 295
+    height: 676
+>>>>>>> parent of a1e8154... broke stuff
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -137,6 +157,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 522
     width: 1298
     height: 341
@@ -148,10 +169,18 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
+=======
+    y: 676
+    width: 1643
+    height: 271
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
+>>>>>>> parent of a1e8154... broke stuff
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 0
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -172,8 +201,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1628
-    height: 913
+    width: 1920
+    height: 997
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -192,7 +221,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1628
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -212,8 +241,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 893
-    width: 1628
+    y: 977
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -236,6 +265,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1298
     height: 863
   m_MinSize: {x: 406, y: 492}
@@ -250,6 +280,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 89
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    width: 1643
+    height: 947
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
+  vertical: 1
+  controlID: 107
+>>>>>>> parent of a1e8154... broke stuff
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,6 +307,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1298
     height: 522
   m_MinSize: {x: 406, y: 221}
@@ -283,6 +322,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 90
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    width: 1643
+    height: 676
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+  controlID: 108
+>>>>>>> parent of a1e8154... broke stuff
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,10 +345,14 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 321
+=======
+    x: 295
+>>>>>>> parent of a1e8154... broke stuff
     y: 0
-    width: 977
-    height: 522
+    width: 1348
+    height: 676
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
 =======
@@ -365,6 +416,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 145
     y: 690
     width: 1296
@@ -375,6 +427,12 @@ MonoBehaviour:
     width: 1444
     height: 353
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    x: 0
+    y: 768
+    width: 1641
+    height: 250
+>>>>>>> parent of a1e8154... broke stuff
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -389,6 +447,7 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -401,11 +460,19 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    - Assets
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/TextMesh Pro
+>>>>>>> parent of a1e8154... broke stuff
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\CS180\Documents\GitHub\Byte_Fights
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
     m_SelectedIDs: 000a0000
@@ -416,6 +483,12 @@ MonoBehaviour:
     m_LastClickedID: 10874
     m_ExpandedIDs: 000000000a2a000000ca9a3b
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: b82f0000
+    m_LastClickedID: 12216
+    m_ExpandedIDs: 00000000b82f00003c30000062300000fc30000000ca9a3bffffff7f
+>>>>>>> parent of a1e8154... broke stuff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -444,10 +517,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000c4090000460a0000442f0000462f0000
 =======
     m_ExpandedIDs: 000000000a2a0000
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    m_ExpandedIDs: 00000000b82f0000
+>>>>>>> parent of a1e8154... broke stuff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -474,12 +551,17 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
     m_ExpandedInstanceIDs: 
 =======
     m_ExpandedInstanceIDs: c6230000
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c62300004a2b0000ac2b0000
+>>>>>>> parent of a1e8154... broke stuff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -495,7 +577,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -505,7 +587,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 115
+  m_DirectoriesAreaWidth: 248
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -527,6 +609,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1445
     y: 168
     width: 328
@@ -537,6 +620,12 @@ MonoBehaviour:
     width: 472
     height: 926
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    x: 1645
+    y: 92
+    width: 275
+    height: 926
+>>>>>>> parent of a1e8154... broke stuff
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -568,6 +657,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 145
     y: 168
     width: 319
@@ -590,6 +680,18 @@ MonoBehaviour:
     m_LastClickedID: 0
     m_ExpandedIDs: e6fbffff00000000e62d0000
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    x: 0
+    y: 92
+    width: 293
+    height: 655
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ccb4fffffee9ffffc2f2ffff0000000002350000
+>>>>>>> parent of a1e8154... broke stuff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -608,7 +710,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
-  - Main
+  - Character_Select
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -634,6 +736,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 468
     y: 168
     width: 973
@@ -644,13 +747,20 @@ MonoBehaviour:
     width: 1085
     height: 552
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    x: 297
+    y: 92
+    width: 1344
+    height: 655
+>>>>>>> parent of a1e8154... broke stuff
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2841.282540664103
+  lastFramingTime: 111.836541739862
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 435.04532, y: 269.3358, z: 351.53906}
     speed: 2
@@ -660,6 +770,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    m_Target: {x: 643.4849, y: 412.02216, z: 15.834744}
+    speed: 2
+    m_Value: {x: 643.4849, y: 412.02216, z: 15.834744}
+>>>>>>> parent of a1e8154... broke stuff
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -692,6 +807,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 18.781502
     speed: 2
     m_Value: 18.781502
@@ -700,6 +816,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 10
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    m_Target: 929.1718
+    speed: 2
+    m_Value: 929.1718
+>>>>>>> parent of a1e8154... broke stuff
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -732,6 +853,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 468
     y: 168
     width: 973
@@ -742,6 +864,12 @@ MonoBehaviour:
     width: 1148
     height: 552
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    x: 297
+    y: 92
+    width: 1344
+    height: 655
+>>>>>>> parent of a1e8154... broke stuff
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -754,6 +882,7 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -486.5
     m_HBaseRangeMax: 486.5
     m_VBaseRangeMin: -242
@@ -764,6 +893,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -267.5
     m_VBaseRangeMax: 267.5
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+    m_HBaseRangeMin: -672
+    m_HBaseRangeMax: 672
+    m_VBaseRangeMin: -319
+    m_VBaseRangeMax: 319
+>>>>>>> parent of a1e8154... broke stuff
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -772,7 +907,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -781,6 +916,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
 <<<<<<< HEAD
       width: 973
       height: 484
@@ -792,12 +928,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 574, y: 267.5}
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+      width: 1344
+      height: 638
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 672, y: 319}
+>>>>>>> parent of a1e8154... broke stuff
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -467.80634
       y: -232.42975
@@ -809,18 +952,28 @@ MonoBehaviour:
       width: 1148
       height: 535
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+      x: -672
+      y: -319
+      width: 1344
+      height: 638
+>>>>>>> parent of a1e8154... broke stuff
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 973, y: 501}
 =======
   m_LastWindowPixelSize: {x: 1148, y: 552}
 >>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+=======
+  m_LastWindowPixelSize: {x: 1344, y: 655}
+>>>>>>> parent of a1e8154... broke stuff
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000100
+  m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
 --- !u!114 &18
 MonoBehaviour:
@@ -842,8 +995,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 718
-    width: 1366
-    height: 308
+    x: 0
+    y: 768
+    width: 1641
+    height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
