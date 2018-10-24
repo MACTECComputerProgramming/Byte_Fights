@@ -58,7 +58,11 @@
      <Compile Include="Assets\exitProgram.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\countdown.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\exitButtonScript.cs" />
+=======
+     <Compile Include="Assets\Scripts\exitProgram.cs" />
+>>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\loadScene.cs" />
      <Compile Include="Assets\Scripts\nextScene.cs" />
