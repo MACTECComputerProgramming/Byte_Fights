@@ -11,8 +11,6 @@ public class PlayerScript : MonoBehaviour
     static public double health = 100;
     private Rigidbody2D theRB;
     public SpriteRenderer Player1;
-    private Animator Animator;
-
 
 
     // Use this for initialization
@@ -20,14 +18,6 @@ public class PlayerScript : MonoBehaviour
     {
         thisTransform = transform;
         theRB = GetComponent<Rigidbody2D>();
-        Animator = GetComponent<Animator>();
-        if(PlayerInfo.Player1char == "Pepe") {
-            Animator.runtimeAnimatorController = Resources.Load("Pepe_Controller") as RuntimeAnimatorController;
-           }
-        else if (PlayerInfo.Player1char == "John_Wick")
-        {
-            Animator.runtimeAnimatorController = Resources.Load("John_Controller") as RuntimeAnimatorController;
-        }
     }
 
     void OnCollisionEnter(Collision col)
