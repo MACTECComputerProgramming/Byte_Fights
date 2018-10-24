@@ -37,23 +37,29 @@ public class PlayerInfo : MonoBehaviour {
     static public bool P1start = false;
     static public bool P2start = false;
     bool fightstart = true;
+    Scene currentScene;
 
 
     // Use this for initialization
     void Start () {
         DontDestroyOnLoad(this);
+         
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(player1char == "Pepe")
+       /* if (currentScene.buildIndex == 2)
         {
-            GameObject.Find("Player1").SetActive(true);
-        }
-        if(player2char == "Pepe")
-        {
-            GameObject.Find("Player2").SetActive(true);
-        }
+            
+            if (player1char == "Pepe")
+            {
+                GameObject.Find("Player1Pepe");
+            }
+            if (player2char == "Pepe")
+            {
+                GameObject.Find("Player2Pepe").SetActive(true);
+            }
+        }*/
         if (Input.GetButton("P1XButton"))
         {
             P1start = true;

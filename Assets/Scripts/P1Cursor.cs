@@ -51,5 +51,17 @@ public class P1Cursor : MonoBehaviour {
             theRB.velocity = new Vector2(0, 0 );
         }
         }
-	}
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+            
+       if (Input.GetButton("P1AButton"))
+            {
+              if (collision.gameObject.name =="PepeButton")
+            {
+                Debug.Log("Hi");
+            PlayerInfo.Player1char = "Pepe";
+            }  
+            } 
+    }
+}
 
