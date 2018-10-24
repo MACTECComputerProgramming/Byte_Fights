@@ -60,13 +60,13 @@
      <Compile Include="Assets\Scripts\countdown.cs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      <Compile Include="Assets\Scripts\Curser.cs" />
 >>>>>>> parent of a1e8154... broke stuff
-     <Compile Include="Assets\Scripts\exitButtonScript.cs" />
 =======
-     <Compile Include="Assets\Scripts\exitProgram.cs" />
->>>>>>> 69fcd91abb63c72dbb58cf27a91c0ea783b8c817
+>>>>>>> parent of fd17b17... Merge branch 'master' of https://github.com/MACTECComputerProgramming/Byte_Fights
+     <Compile Include="Assets\Scripts\exitButtonScript.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\loadScene.cs" />
      <Compile Include="Assets\Scripts\p2PlayerScript.cs" />
