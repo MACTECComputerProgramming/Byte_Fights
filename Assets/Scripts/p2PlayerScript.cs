@@ -22,6 +22,7 @@ public class p2PlayerScript : MonoBehaviour
     public bool isHit;
     public LayerMask whatIsPlayer;
     double damage = 0;
+    static public double health = 100;
     private Rigidbody2D theRB;
     public SpriteRenderer Player2;
     public Slider Playerslider;
@@ -35,6 +36,15 @@ public class p2PlayerScript : MonoBehaviour
         theRB = GetComponent<Rigidbody2D>();
     }
 
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "Player 1")
+        {
+
+            health -= damage;
+
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -57,7 +67,7 @@ public class p2PlayerScript : MonoBehaviour
         {
             theRB.velocity = new Vector2(0, theRB.velocity.y);
         }
-        if (Input.GetButton("Abutton"))
+        if (Input.GetButton("P2AButton"))
         {
             if (isHit)
             {
@@ -67,21 +77,21 @@ public class p2PlayerScript : MonoBehaviour
 
         }
 
-        if (Input.GetButton("AButton"))
+        if (Input.GetButton("P2AButton"))
         {
 
             //inset action
         }
-        if (Input.GetButton("BButton"))
+        if (Input.GetButton("P2BButton"))
         {
 
             //inset action
         }
-        if (Input.GetButton("XButton"))
+        if (Input.GetButton("P2XButton"))
         {
             //inset action
 
-        } if (Input.GetButton("YButton"))
+        } if (Input.GetButton("P2YButton"))
         {
 
             //inset action
