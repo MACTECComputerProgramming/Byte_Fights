@@ -20,11 +20,11 @@ public class loadScene : MonoBehaviour {
 
     private void OnTriggerEnter(Collider coll) 
     {
-            if(Input.GetButton("P1AButton"))
+            if(Input.GetButtonDown("P1AButton"))
             {
                 SceneManager.LoadScene("Character_Select");
             }
-            else if (Input.GetButton("P2AButton"))
+            else if (Input.GetButtonDown("P2AButton"))
             {
                 SceneManager.LoadScene("Character_Select");
             }

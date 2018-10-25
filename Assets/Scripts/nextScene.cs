@@ -11,28 +11,35 @@ public class nextScene : MonoBehaviour {
 	void Start () {
         player1 = GameObject.Find("P1Cursor");
         player2 = GameObject.Find("P2Cursor");
-
+        
 	}
 	
 	
 	void Update () {
-		
+        
 	}
 
-    private void OnTriggerStay(Collider coll)
+    private void OnTriggerStay2D(Collider2D coll)
     {
-        if (coll.gameObject == player1)
+        if (Input.GetButton("P1XButton"))
         {
             Debug.Log("Working");
-            if (Input.GetButton("P1AButton"))
-            {
-                Debug.Log("k");
-                SceneManager.LoadScene("Character_Select");
-            }
-            else if (Input.GetButton("P2AButton"))
+            if (coll.gameObject == player1)
             {
                 SceneManager.LoadScene("Character_Select");
             }
         }
+        else if (Input.GetButton("P2XButton"))
+        {
+            Debug.Log("Working 2");
+            if (coll.gameObject == player2)
+            {
+                SceneManager.LoadScene("Character_Select");
+            }
+        }
+       
+                
+          
+        }
     }
-}
+
