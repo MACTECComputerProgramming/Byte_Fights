@@ -7,7 +7,6 @@ public class P1Cursor : MonoBehaviour {
     private Transform thisTransform;
     private Rigidbody2D theRB;
     public SpriteRenderer Player1;
-
 	// Use this for initialization
 	void Start () {
         theRB = GetComponent<Rigidbody2D>();
@@ -19,10 +18,9 @@ public class P1Cursor : MonoBehaviour {
         Movement();
     }
         void Movement()
-        {   
-            float movespeedy = -1;
-     float movespeedx = 1;
-
+        {
+        float movespeedy = -1;
+        float movespeedx = 1;
         movespeedx = movespeedx * Input.GetAxis("LeftJoystickHorizontal");
         movespeedy = movespeedy * Input.GetAxis("LeftJoystickVertical");
         if (Input.GetAxis("LeftJoystickHorizontal") == 1)

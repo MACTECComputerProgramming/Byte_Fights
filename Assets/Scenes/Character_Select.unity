@@ -277,11 +277,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.34
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.961
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalPosition.z
@@ -309,13 +309,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalScale.x
-      value: -0.86992884
+      value: 0.12641895
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalScale.y
-      value: -0.91952664
+      value: 0.16009034
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
+    - target: {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
       propertyPath: Player1
       value: 
       objectReference: {fileID: 1027694239}
@@ -324,7 +325,8 @@ Prefab:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
+    - target: {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
       propertyPath: buttonName
       value: LeftJoystickHorizontal
       objectReference: {fileID: 0}
@@ -332,7 +334,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0b302c6faf525cf4e938cbea7d254680,
+      objectReference: {fileID: 21300000, guid: c7be7287038e7134c9526e0b88a2680b,
         type: 3}
     - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
         type: 2}
@@ -368,22 +370,8 @@ Prefab:
       propertyPath: m_Name
       value: P2Cursor
       objectReference: {fileID: 0}
-    - target: {fileID: 4249744514361132, guid: a99557211327c724b902a25e9f850467, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
-        type: 2}
-      propertyPath: m_FlipY
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
-        type: 2}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 0}
+    - {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: a99557211327c724b902a25e9f850467, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &108055200
@@ -887,11 +875,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.041
+      value: -6.05
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.034
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalPosition.z
@@ -917,53 +905,71 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1604752252333832, guid: a99557211327c724b902a25e9f850467, type: 2}
-      propertyPath: m_Name
-      value: P1Cursor
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.9566045
-      objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalScale.x
-      value: -0.91176236
+      value: 0.12641895
       objectReference: {fileID: 0}
-    - target: {fileID: 4249744514361132, guid: a99557211327c724b902a25e9f850467, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
+    - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.16009034
       objectReference: {fileID: 0}
-    - target: {fileID: 1645881364677626, guid: a99557211327c724b902a25e9f850467, type: 2}
-      propertyPath: m_IsActive
+    - target: {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: Player1
+      value: 
+      objectReference: {fileID: 1083373976}
+    - target: {fileID: 50962125217647714, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
+    - target: {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467,
         type: 2}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: buttonName
+      value: LeftJoystickHorizontal
       objectReference: {fileID: 0}
     - target: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6dfe13944cb11ce4e9372c6871249420,
+      objectReference: {fileID: 21300000, guid: 77f902c4acb043b4bb2944e6053d6c24,
         type: 3}
-    - target: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
         type: 2}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
-        type: 2}
-      propertyPath: m_FlipY
+      propertyPath: m_Offset.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 19.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 10.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604752252333832, guid: a99557211327c724b902a25e9f850467, type: 2}
+      propertyPath: m_Name
+      value: P1Cursor
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: a99557211327c724b902a25e9f850467, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &679830334
@@ -1189,6 +1195,29 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
     type: 2}
   m_PrefabInternal: {fileID: 88162266}
+--- !u!1 &1083373972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1604752252333832, guid: a99557211327c724b902a25e9f850467,
+    type: 2}
+  m_PrefabInternal: {fileID: 444974133}
+--- !u!114 &1083373973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083373972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4bd780142ea994893235adc0e199a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonName: LeftJoystickVertical
+  Player1: {fileID: 1083373976}
+--- !u!212 &1083373976 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 212295233718278594, guid: a99557211327c724b902a25e9f850467,
+    type: 2}
+  m_PrefabInternal: {fileID: 444974133}
 --- !u!1 &1802859324
 GameObject:
   m_ObjectHideFlags: 0

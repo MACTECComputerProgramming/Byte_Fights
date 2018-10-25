@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class loadScene : MonoBehaviour {
-    private GameObject player1;
-    private GameObject player2;
 
-    void Start()
+    public void load()
     {
-        player1 = GameObject.Find("P1Cursor");
-        player2 = GameObject.Find("P2Cursor");
+        SceneManager.LoadScene("Character_Select");
     }
+<<<<<<< HEAD
     void Update()
     {
 
@@ -31,6 +28,8 @@ public class loadScene : MonoBehaviour {
         
     }
    
+=======
+>>>>>>> 43f68a50566285439b5590885221492173c254d7
 	
 		
 	
