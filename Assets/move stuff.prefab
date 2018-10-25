@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212295233718278594}
   - component: {fileID: 50962125217647714}
   - component: {fileID: 61217443462647076}
-  - component: {fileID: 114619484356327286}
+  - component: {fileID: 114141088730452372}
   m_Layer: 0
   m_Name: move stuff
   m_TagString: Untagged
@@ -65,8 +65,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1604752252333832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.875, y: -0.678, z: 0}
-  m_LocalScale: {x: 0.59768105, y: 0.7742959, z: 1}
+  m_LocalPosition: {x: -5.7, y: 0.03, z: 0}
+  m_LocalScale: {x: 0.12641895, y: 0.16009034, z: 1}
   m_Children:
   - {fileID: 4249744514361132}
   m_Father: {fileID: 0}
@@ -86,7 +86,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -104,20 +104,20 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.57116115, y: 0.119999886}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 10}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 12.8, y: 7.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.032322, y: 7.46}
+  m_Size: {x: 19.4, y: 10.7}
   m_EdgeRadius: 0
---- !u!114 &114619484356327286
+--- !u!114 &114141088730452372
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,10 +125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1604752252333832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88bf58db56f4c2448bfca0e6cf0aaca9, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4bd780142ea994893235adc0e199a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonName: LeftJoystickHorizontal
+  buttonName: LeftJoystickVertical
   Player1: {fileID: 212295233718278594}
 --- !u!212 &212295233718278594
 SpriteRenderer:
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3f1302786991c16459ea24ede00e6945, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77f902c4acb043b4bb2944e6053d6c24, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
