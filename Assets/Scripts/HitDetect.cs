@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HitDetectP1 : MonoBehaviour {
+public class HitDetect : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,11 @@ public class HitDetectP1 : MonoBehaviour {
         if (col.gameObject.name.Equals("Player 2"))
         {
             Debug.Log("if");
-            PlayerScript.health -= .1;
+            p2PlayerScript.health -= PlayerScript.damage;
+        }
+        if(col.gameObject.name.Equals("Player 1"))
+        {
+            PlayerScript.health -= p2PlayerScript.damage;
         }
     }
 }

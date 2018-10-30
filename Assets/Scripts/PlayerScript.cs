@@ -24,8 +24,12 @@ public class PlayerScript : MonoBehaviour
         theRB = GetComponent<Rigidbody2D>();
         thisAnim = GetComponent<RuntimeAnimatorController>();
         if (PlayerInfo.Player1char == "Pepe")
-       {
+        {
             thisAnim = Pepe;
+        }
+        else if (PlayerInfo.Player1char == "Wick")
+        {
+            thisAnim = Wick;
         }
         anim = GetComponent<Animator>();
     }
@@ -55,7 +59,8 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetButton("P1AButton"))
         {
             anim.SetBool("Punch", true);
-            //inset action
+            theRB.velocity = new Vector2(0,0);
+
         }
         else
         {
@@ -64,16 +69,16 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetButton("P1BButton"))
         {
 
-            //inset action
+
         }
         if (Input.GetButton("P1XButton"))
         {
-            //inset action
+
 
         } if (Input.GetButton("P1YButton"))
         {
 
-            //inset action
+
         }
 
 

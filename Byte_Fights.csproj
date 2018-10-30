@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{429FD389-2232-1E25-6462-38974F234FA9}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp.dll</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
@@ -254,10 +254,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/fivesnows/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/3dprint/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/fivesnows/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/3dprint/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll</HintPath>
@@ -313,7 +313,7 @@
     <Compile Include="Assets\Scripts\exitButtonScript.cs" />
     <Compile Include="Assets\Scripts\exitProgram.cs" />
     <Compile Include="Assets\Scripts\HealthScript.cs" />
-    <Compile Include="Assets\Scripts\HitDetectP1.cs" />
+    <Compile Include="Assets\Scripts\HitDetect.cs" />
     <Compile Include="Assets\Scripts\loadScene.cs" />
     <Compile Include="Assets\Scripts\nextScene.cs" />
     <Compile Include="Assets\Scripts\P1Cursor.cs" />
