@@ -5,45 +5,31 @@ using UnityEngine.UI;
 
 public class p2PlayerScript : MonoBehaviour
 {
-    private string horizontalAxis;
-    private string verticalAxis;
-    private string aButton;
-    private string bButton;
-    private string triggerAxis;
-    private int controllerNumber;
-    public float jumpForce;
-    public string buttonName;
-    private Vector2 startPos;
-    public string inputName;
-    private Transform thisTransform;
 
-    public Transform hitCheckPoint;
-    public float hitCheckRadius;
-    public bool isHit;
-    public LayerMask whatIsPlayer;
-    double damage = 0;
+
+    static public double damage = 10;
     static public double health = 100;
     private Rigidbody2D theRB;
     public SpriteRenderer Player2;
-    public Slider Playerslider;
-
+    RuntimeAnimatorController thisAnim;
+    public RuntimeAnimatorController Pepe;
+    public RuntimeAnimatorController Wick;
+    Animator anim;
 
     // Use this for initialization
     void Start()
     {
-        thisTransform = transform;
-        startPos = this.transform.position;
         theRB = GetComponent<Rigidbody2D>();
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Player 1")
+        thisAnim = GetComponent<RuntimeAnimatorController>();
+        if (PlayerInfo.Player1char == "Pepe")
         {
-
-            health -= damage;
-
+            thisAnim = Pepe;
         }
+        else if (PlayerInfo.Player1char == "Wick")
+        {
+            thisAnim = Wick;
+        }
+        anim = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -69,12 +55,12 @@ public class p2PlayerScript : MonoBehaviour
         }
         if (Input.GetButton("P2AButton"))
         {
-            if (isHit)
-            {
-                damage += .1;
-
-            }
-
+            anim.SetBool("Punch", true);
+            theRB.velocity = new Vector2(0, 0);
+        }
+        else
+        {
+            anim.SetBool("Punch", false);
         }
 
         if (Input.GetButton("P2AButton"))
@@ -97,23 +83,5 @@ public class p2PlayerScript : MonoBehaviour
             //inset action
         }
 
-
-
-
-        /*public void HealthBar(double damage)
-        {
-            Playerslider.value = (float)damage;
-
-
-        }
-     /*   internal void SetControllerNumber (int number)
-        {
-            controllerNumber = number;
-            horizontalAxis = "J" + controllerNumber + "LeftJoystickHorizontal";
-            verticalAxis = "J" + controllerNumber + "LeftJoystickVertical";
-            aButton = "J" + controllerNumber + "A";
-            bButton = "J" + controllerNumber + "B";
-            triggerAxis = "J" + controllerNumber + "Trigger";
-        }*/
     }
 }

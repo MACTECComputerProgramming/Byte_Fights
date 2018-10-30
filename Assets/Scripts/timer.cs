@@ -12,6 +12,7 @@ public class timer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        timeLeft = 60f;
         text = GetComponent<Text>();
 	}
 	

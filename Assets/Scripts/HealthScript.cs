@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class HealthScript : MonoBehaviour {
 
-    private float fillAmount;
+    private float P1fillAmount,P2fillAmount;
     [SerializeField]
     private Image Player1HP;
+    [SerializeField]
+    private Image Player2Hp;
     
   
 	// Use this for initialization
@@ -18,7 +20,10 @@ public class HealthScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        fillAmount = (float)PlayerScript.health / 100;
-        Player1HP.fillAmount = fillAmount;
+        P1fillAmount = (float)PlayerScript.health / 100;
+        Player1HP.fillAmount = P1fillAmount;
+
+        P2fillAmount = (float)p2PlayerScript.health / 100;
+        Player2Hp.fillAmount = P2fillAmount;
 	}
 }
