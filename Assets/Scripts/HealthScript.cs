@@ -18,7 +18,7 @@ public class HealthScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        fillAmount = (float)PlayerScript.damage / 100;
+        fillAmount = (float)PlayerScript.health / 100;
         Player1HP.fillAmount = fillAmount;
 	}
 }

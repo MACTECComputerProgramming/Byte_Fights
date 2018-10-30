@@ -11,6 +11,10 @@ public class PlayerScript : MonoBehaviour
     static public double health = 100;
     private Rigidbody2D theRB;
     public SpriteRenderer Player1;
+    RuntimeAnimatorController thisAnim;
+    public RuntimeAnimatorController Pepe;
+    public RuntimeAnimatorController Wick;
+    Animator anim;
 
 
     // Use this for initialization
@@ -18,23 +22,17 @@ public class PlayerScript : MonoBehaviour
     {
         thisTransform = transform;
         theRB = GetComponent<Rigidbody2D>();
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Player 1")
-        {
-           
-            health -= damage;
-
+        thisAnim = GetComponent<RuntimeAnimatorController>();
+        if (PlayerInfo.Player1char == "Pepe")
+       {
+            thisAnim = Pepe;
         }
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-        //isHit = Physics2D.OverlapCircle(hitCheckPoint.position, hitCheckRadius, whatIsPlayer);
       
 
         float movespeed = 1;
@@ -56,8 +54,12 @@ public class PlayerScript : MonoBehaviour
         }
         if (Input.GetButton("P1AButton"))
         {
-
+            anim.SetBool("Punch", true);
             //inset action
+        }
+        else
+        {
+            anim.SetBool("Punch", false);
         }
         if (Input.GetButton("P1BButton"))
         {
@@ -74,12 +76,6 @@ public class PlayerScript : MonoBehaviour
             //inset action
         }
 
-
-        /*if(hit)
-         * {
-         *  damage = Random Numb<100;
-         *  health = health-damage;
-         *  }*/
 
         
     }
