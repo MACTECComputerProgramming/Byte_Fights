@@ -14,7 +14,7 @@ public class p2PlayerScript : MonoBehaviour
     RuntimeAnimatorController thisAnim;
     public RuntimeAnimatorController Pepe;
     public RuntimeAnimatorController Wick;
-    Animator anim;
+    static public Animator anim;
 
     // Use this for initialization
     void Start()
@@ -65,9 +65,14 @@ public class p2PlayerScript : MonoBehaviour
 
         if (Input.GetButton("P2AButton"))
         {
-
+            anim.SetBool("Block", true);
             //inset action
         }
+        else
+        {
+            anim.SetBool("Block", false);
+        }
+
         if (Input.GetButton("P2BButton"))
         {
 

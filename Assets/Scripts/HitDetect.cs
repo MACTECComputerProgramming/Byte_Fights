@@ -19,11 +19,17 @@ public class HitDetect : MonoBehaviour {
         if (col.gameObject.name.Equals("Player 2"))
         {
             Debug.Log("if");
-            p2PlayerScript.health -= PlayerScript.damage;
+            if (PlayerScript.anim.GetBool("Block") == false)
+            {
+                p2PlayerScript.health -= PlayerScript.damage;
+            }
         }
         if(col.gameObject.name.Equals("Player 1"))
         {
-            PlayerScript.health -= p2PlayerScript.damage;
+            if (p2PlayerScript.anim.GetBool("Block") == false)
+            {
+                PlayerScript.health -= p2PlayerScript.damage;
+            }
         }
     }
 }

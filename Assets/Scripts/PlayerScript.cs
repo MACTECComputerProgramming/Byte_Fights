@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
     RuntimeAnimatorController thisAnim;
     public RuntimeAnimatorController Pepe;
     public RuntimeAnimatorController Wick;
-    Animator anim;
+    static public Animator anim;
 
 
     // Use this for initialization
@@ -68,8 +68,12 @@ public class PlayerScript : MonoBehaviour
         }
         if (Input.GetButton("P1BButton"))
         {
+            anim.SetBool("Block", true);
 
-
+        }
+        else
+        {
+            anim.SetBool("Block", true);
         }
         if (Input.GetButton("P1XButton"))
         {
