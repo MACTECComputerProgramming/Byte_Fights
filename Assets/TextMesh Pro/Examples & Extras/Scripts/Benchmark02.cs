@@ -1,10 +1,10 @@
-using UnityEngine;
+ /*using UnityEngine;
 using System.Collections;
 
 
 namespace TMPro.Examples
 {
-    
+   
     public class Benchmark02 : MonoBehaviour
     {
 
@@ -92,3 +92,4 @@ namespace TMPro.Examples
         }
     }
 }
+*/

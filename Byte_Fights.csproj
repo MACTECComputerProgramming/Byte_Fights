@@ -307,8 +307,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\buttonEvent.cs" />
-    <Compile Include="Assets\exitButton.cs" />
-    <Compile Include="Assets\exitProgram.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\countdown.cs" />
     <Compile Include="Assets\Scripts\Curser.cs" />
