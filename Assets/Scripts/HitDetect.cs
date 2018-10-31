@@ -20,7 +20,7 @@ public class HitDetect : MonoBehaviour {
         if (col.gameObject.name.Equals("Player 2"))
         {
             Debug.Log("if");
-            if (PlayerScript.anim.GetBool("Block") == false)
+            if (p2PlayerScript.anim.GetBool("Block") == false)
             {
                 Debug.Log("Hit");
                 p2PlayerScript.health -= PlayerScript.damage;
@@ -28,11 +28,11 @@ public class HitDetect : MonoBehaviour {
         }
         if(col.gameObject.name.Equals("Player 1"))
         {
-            if (p2PlayerScript.anim.GetBool("Block") == false)
+            if (PlayerScript.anim.GetBool("Block") == false)
             {
                 PlayerScript.health -= p2PlayerScript.damage;
 
-                Vector2 hitDirection = col.transform.position - player1.transform.position;
+                Vector2 hitDirection =  player1.transform.position - col.transform.position;
 
                 //hitDirection = hitDirection.normalized;
 
