@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour
     static public double damage = 10;
     static public double health = 100;
     static public Rigidbody2D theRB;
-    SpriteRenderer Player1;
+    public SpriteRenderer Player1;
     RuntimeAnimatorController thisAnim;
     public RuntimeAnimatorController Pepe;
     public RuntimeAnimatorController Wick;
@@ -62,7 +62,7 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetButton("P1AButton"))
             {
                 anim.SetBool("Punch", true);
-                theRB.velocity = new Vector2(0, 0);
+                //theRB.velocity = new Vector2(0, 0);
 
             }
             else
@@ -99,9 +99,7 @@ public class PlayerScript : MonoBehaviour
         public void Knockback(Vector2 direction)
         {
         knockBackCounter = knockBackTime;
-
-        direction = new Vector2(1, 0);
-
+        Debug.Log("Bruno Mars");
         theRB.velocity = direction * knockBackForce;
         }
 }
