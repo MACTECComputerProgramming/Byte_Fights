@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class HealthScript : MonoBehaviour {
 
-    public float P1fillAmount,P2fillAmount;
-    [SerializeField]
+    public float P1fillAmount;
+    
+    public float P2fillAmount;
+
     public Image Player1HP;
-    [SerializeField]
+   
     public Image Player2Hp;
     
   

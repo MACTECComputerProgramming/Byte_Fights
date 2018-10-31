@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class HitDetect : MonoBehaviour {
 
+    public PlayerScript player1;
 	// Use this for initialization
 	void Start () {
-		
+        player1 = FindObjectOfType<PlayerScript>();
 	}
 	
 	// Update is called once per frame
@@ -21,6 +22,7 @@ public class HitDetect : MonoBehaviour {
             Debug.Log("if");
             if (PlayerScript.anim.GetBool("Block") == false)
             {
+                Debug.Log("Hit");
                 p2PlayerScript.health -= PlayerScript.damage;
             }
         }
@@ -29,6 +31,12 @@ public class HitDetect : MonoBehaviour {
             if (p2PlayerScript.anim.GetBool("Block") == false)
             {
                 PlayerScript.health -= p2PlayerScript.damage;
+
+                Vector2 hitDirection = col.transform.position - player1.transform.position;
+
+                //hitDirection = hitDirection.normalized;
+
+                player1.Knockback(hitDirection);
             }
         }
     }

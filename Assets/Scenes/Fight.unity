@@ -305,6 +305,16 @@ Prefab:
       propertyPath: m_Offset.y
       value: -1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: knockBackTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: knockBackForce
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a99557211327c724b902a25e9f850467, type: 2}
   m_IsPrefabAsset: 0
@@ -1072,6 +1082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c34b505e39fdc46939eb0cfff927c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  P1fillAmount: 0
+  P2fillAmount: 0
   Player1HP: {fileID: 1214745320}
   Player2Hp: {fileID: 989336579}
 --- !u!1 &798897404
@@ -1440,6 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d626c8867bb25143907432b63d39b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1: {fileID: 0}
 --- !u!1 &946543566
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,6 +3261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d626c8867bb25143907432b63d39b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1: {fileID: 0}
 --- !u!1 &1842899937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4206,6 +4220,8 @@ MonoBehaviour:
   Player2: {fileID: 2053606177}
   Pepe: {fileID: 0}
   Wick: {fileID: 0}
+  knockBackForce: 5
+  knockBackTime: 5
 --- !u!95 &2053606182
 Animator:
   serializedVersion: 3

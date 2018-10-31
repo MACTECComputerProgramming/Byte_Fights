@@ -16,6 +16,11 @@ public class p2PlayerScript : MonoBehaviour
     public RuntimeAnimatorController Wick;
     static public Animator anim;
 
+
+    public float knockBackForce;
+    public float knockBackTime;
+    private float knockBackCounter;
+
     // Use this for initialization
     void Start()
     {
@@ -89,4 +94,13 @@ public class p2PlayerScript : MonoBehaviour
         }
 
     }
+        public void Knockback(Vector2 direction)
+        {
+            knockBackCounter = knockBackTime;
+
+            direction = new Vector2(1, 0);
+
+            theRB.velocity = direction * knockBackForce;
+        }
 }
+

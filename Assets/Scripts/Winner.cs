@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class Winner : MonoBehaviour {
     Text text;
+    public Image player2HP;
+    public Image player1HP;
+    
 	// Use this for initialization
 	void Start () {
 
@@ -15,7 +18,7 @@ public class Winner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (HealthScript.Player2Hp.fillAmount == 0)
+        if (player2HP.fillAmount == 0)
        {
            text.text = "Player 1 Wins ";
        }
