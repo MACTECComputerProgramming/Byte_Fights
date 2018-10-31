@@ -26,11 +26,13 @@ public class PlayerScript : MonoBehaviour
         thisAnim = GetComponent<RuntimeAnimatorController>();
         if (PlayerInfo.Player1char == "Pepe")
         {
-            thisAnim = Pepe;
+            Debug.Log("Pepe");
+           
+            this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
         }
         else if (PlayerInfo.Player1char == "Wick")
         {
-            thisAnim = Wick;
+            this.GetComponent<Animator>().runtimeAnimatorController = Wick;
         }
         anim = GetComponent<Animator>();
     }

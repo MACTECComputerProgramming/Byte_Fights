@@ -46,14 +46,17 @@ public class PlayerInfo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(player1char == "Pepe")
+        /*if (SceneManager.sceneCount.Equals(1))
         {
-            GameObject.Find("Player1").SetActive(true);
-        }
-        if(player2char == "Pepe")
-        {
-            GameObject.Find("Player2").SetActive(true);
-        }
+            if (player1char == "Pepe")
+            {
+                GameObject.Find("Player1").SetActive(true);
+            }
+            if (player2char == "Pepe")
+            {
+                GameObject.Find("Player2").SetActive(true);
+            }
+        }*/
         if (Input.GetButton("P1XButton"))
         {
             P1start = true;
