@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour
     static public double damage = 10;
     static public double health = 100;
     static public Rigidbody2D theRB;
-    SpriteRenderer Player1;
+    public SpriteRenderer Player1;
     RuntimeAnimatorController thisAnim;
     public RuntimeAnimatorController Pepe;
     public RuntimeAnimatorController Wick;
