@@ -3048,8 +3048,9 @@ GameObject:
   - component: {fileID: 1700404181}
   - component: {fileID: 1700404183}
   - component: {fileID: 1700404182}
+  - component: {fileID: 1700404184}
   m_Layer: 0
-  m_Name: Text
+  m_Name: Winner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3113,6 +3114,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700404180}
   m_CullTransparentMesh: 0
+--- !u!114 &1700404184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700404180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a4a9e5675f90648ae2b66e0f285e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1700404182}
+  player2HP: {fileID: 989336579}
+  player1HP: {fileID: 1214745320}
 --- !u!1 &1740576036
 GameObject:
   m_ObjectHideFlags: 0

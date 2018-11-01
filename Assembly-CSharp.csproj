@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\buttonEvent.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\countdown.cs" />
      <Compile Include="Assets\Scripts\Curser.cs" />
@@ -68,7 +67,8 @@
      <Compile Include="Assets\Scripts\p2PlayerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
-     <Compile Include="Assets\Scripts\SelectButtons.cs" />
+     <Compile Include="Assets\Scripts\SelectPepe.cs" />
+     <Compile Include="Assets\Scripts\SelectWick.cs" />
      <Compile Include="Assets\Scripts\timer.cs" />
      <Compile Include="Assets\Scripts\Winner.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
