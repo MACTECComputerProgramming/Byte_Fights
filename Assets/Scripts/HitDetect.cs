@@ -24,6 +24,7 @@ public class HitDetect : MonoBehaviour {
             {
                 Debug.Log("Hit");
                 p2PlayerScript.health -= PlayerScript.damage;
+                p2PlayerScript.anim.SetFloat("Stunned", 2);
             }
         }
         if(col.gameObject.name.Equals("Player 1"))
@@ -34,6 +35,7 @@ public class HitDetect : MonoBehaviour {
 
                 Vector2 hitDirection =  player1.transform.position - col.transform.position;
 
+                PlayerScript.anim.SetFloat("Stunned", 2);
                 //hitDirection = hitDirection.normalized;
 
                 player1.Knockback(hitDirection);

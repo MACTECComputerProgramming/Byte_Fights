@@ -19,8 +19,8 @@ public class P1Cursor : MonoBehaviour {
     }
         void Movement()
         {
-        float movespeedy = -1;
-        float movespeedx = 1;
+        float movespeedy = -5;
+        float movespeedx = 5;
         movespeedx = movespeedx * Input.GetAxis("LeftJoystickHorizontal");
         movespeedy = movespeedy * Input.GetAxis("LeftJoystickVertical");
         if (Input.GetAxis("LeftJoystickHorizontal") == 1)

@@ -21,8 +21,8 @@ public class P2Cursor : MonoBehaviour {
     }
     void Movement()
     {
-        float movespeedx = 1;
-        float movespeedy = -1;
+        float movespeedx = 5;
+        float movespeedy = -5;
         movespeedx = movespeedx * Input.GetAxis("p2LeftJoystickHorizontal"); 
         movespeedy = movespeedy * Input.GetAxis("p2LeftJoystickVertical");
         if (Input.GetAxis("p2LeftJoystickHorizontal") == 1)

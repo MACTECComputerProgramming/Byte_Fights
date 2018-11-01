@@ -27,14 +27,14 @@ public class PlayerScript : MonoBehaviour
         if (PlayerInfo.Player1char == "Pepe")
         {
             Debug.Log("Pepe");
-            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -12/10);
+            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -1.2f);
             this.transform.localScale = new Vector2(.7f, .8f);
             this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
         }
         else if (PlayerInfo.Player1char == "Wick")
         {
-            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -1/3);
-            this.transform.localScale = new Vector2(-1, 11/10);
+            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -.3f);
+            this.transform.localScale = new Vector2(-1, 1.1f);
             this.GetComponent<Animator>().runtimeAnimatorController = Wick;
             
         }
@@ -48,8 +48,10 @@ public class PlayerScript : MonoBehaviour
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("LeftJoystickHorizontal");
-        if (knockBackCounter <= 0)
+        if (anim.GetFloat("Stunned") <= 0)
         {
+       
+        
             if (Input.GetAxis("LeftJoystickHorizontal") == 1)
             {
                 Player1.flipX = false;
@@ -97,7 +99,7 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            knockBackCounter -= Time.deltaTime;
+            anim.SetFloat("Stunned", anim.GetFloat("Stunned") - Time.deltaTime);
         }
 
         
@@ -105,7 +107,6 @@ public class PlayerScript : MonoBehaviour
         public void Knockback(Vector2 direction)
         {
         knockBackCounter = knockBackTime;
-        Debug.Log("Bruno Mars");
         theRB.velocity = direction * knockBackForce;
         }
 }
