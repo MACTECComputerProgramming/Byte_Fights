@@ -32,6 +32,7 @@ public class SelectWick : MonoBehaviour {
         {
             if (coll.gameObject == player2)
             {
+                Debug.Log("P2Wick");
                 PlayerInfo.Player2char = "Wick";
             }
         }

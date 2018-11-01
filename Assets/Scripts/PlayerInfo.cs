@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerInfo : MonoBehaviour {
 
     static private string player1char;
+
     static private string player2char;
+    
     
     static public string Player1char
     {

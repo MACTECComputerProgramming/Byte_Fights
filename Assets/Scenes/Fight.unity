@@ -259,7 +259,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467, type: 2}
       propertyPath: m_LocalScale.y
@@ -4159,8 +4159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player2: {fileID: 2053606177}
-  Pepe: {fileID: 0}
-  Wick: {fileID: 0}
+  Pepe: {fileID: 9100000, guid: f09450ed503aa024887bff7d48101b43, type: 2}
+  Wick: {fileID: 9100000, guid: 20b78dc6867037f4085bafcd459a1bf2, type: 2}
   knockBackForce: 5
   knockBackTime: 5
 --- !u!95 &2053606182
