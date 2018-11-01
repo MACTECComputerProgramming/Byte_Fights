@@ -9,7 +9,7 @@ public class Winner : MonoBehaviour {
     public Text text;
     public Image player2HP;
     public Image player1HP;
-    public double swapscenenumber = 5;
+    public double swapscenenumber = 20;
 	// Use this for initialization
 	void Start () {
 

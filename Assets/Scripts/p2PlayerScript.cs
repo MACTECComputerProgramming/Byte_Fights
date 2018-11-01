@@ -35,7 +35,8 @@ public class p2PlayerScript : MonoBehaviour
         else if (PlayerInfo.Player2char == "Wick")
         {
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -.3f);
-            this.transform.localScale = new Vector2(-1, 1.1f);
+            this.GetComponent<BoxCollider2D>().size = new Vector2(2.5f, 5);
+            this.transform.localScale = new Vector2(1, 1.1f);
             this.GetComponent<Animator>().runtimeAnimatorController = Wick;
         }
         anim = GetComponent<Animator>();
@@ -74,7 +75,7 @@ public class p2PlayerScript : MonoBehaviour
                 anim.SetBool("Punch", false);
             }
 
-            if (Input.GetButton("P2AButton"))
+            if (Input.GetButton("P2BButton"))
             {
                 anim.SetBool("Block", true);
                 //inset action
@@ -82,12 +83,6 @@ public class p2PlayerScript : MonoBehaviour
             else
             {
                 anim.SetBool("Block", false);
-            }
-
-            if (Input.GetButton("P2BButton"))
-            {
-
-                //inset action
             }
             if (Input.GetButton("P2XButton"))
             {

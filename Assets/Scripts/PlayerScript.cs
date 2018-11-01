@@ -34,6 +34,7 @@ public class PlayerScript : MonoBehaviour
         else if (PlayerInfo.Player1char == "Wick")
         {
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -.3f);
+            this.GetComponent<BoxCollider2D>().size = new Vector2(2.5f, 5);
             this.transform.localScale = new Vector2(-1, 1.1f);
             this.GetComponent<Animator>().runtimeAnimatorController = Wick;
             

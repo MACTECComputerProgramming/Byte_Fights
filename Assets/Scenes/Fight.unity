@@ -3128,6 +3128,7 @@ MonoBehaviour:
   text: {fileID: 1700404182}
   player2HP: {fileID: 989336579}
   player1HP: {fileID: 1214745320}
+  swapscenenumber: 20
 --- !u!1 &1740576036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,7 +4211,7 @@ Animator:
   m_GameObject: {fileID: 2053606176}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f09450ed503aa024887bff7d48101b43, type: 2}
+  m_Controller: {fileID: 9100000, guid: 20b78dc6867037f4085bafcd459a1bf2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
