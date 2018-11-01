@@ -28,7 +28,7 @@ public class PlayerScript : MonoBehaviour
         {
             Debug.Log("Pepe");
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -12/10);
-            this.transform.localScale = new Vector2(7/10, 8/10);
+            this.transform.localScale = new Vector2(.7f, .8f);
             this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
         }
         else if (PlayerInfo.Player1char == "Wick")

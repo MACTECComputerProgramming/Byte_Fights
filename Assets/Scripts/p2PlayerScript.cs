@@ -26,13 +26,13 @@ public class p2PlayerScript : MonoBehaviour
     {
         theRB = GetComponent<Rigidbody2D>();
         thisAnim = GetComponent<RuntimeAnimatorController>();
-        if (PlayerInfo.Player1char == "Pepe")
+        if (PlayerInfo.Player2char == "Pepe")
         {
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -12 / 10);
-            this.transform.localScale = new Vector2(7 / 10, 8 / 10);
+            this.transform.localScale = new Vector2(.7f , .8f);
             this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
         }
-        else if (PlayerInfo.Player1char == "Wick")
+        else if (PlayerInfo.Player2char == "Wick")
         {
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -1 / 3);
             this.transform.localScale = new Vector2(-1, 11 / 10);
