@@ -27,12 +27,16 @@ public class PlayerScript : MonoBehaviour
         if (PlayerInfo.Player1char == "Pepe")
         {
             Debug.Log("Pepe");
-           
+            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -12/10);
+            this.transform.localScale = new Vector2(7/10, 8/10);
             this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
         }
         else if (PlayerInfo.Player1char == "Wick")
         {
+            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -1/3);
+            this.transform.localScale = new Vector2(-1, 11/10);
             this.GetComponent<Animator>().runtimeAnimatorController = Wick;
+            
         }
         anim = GetComponent<Animator>();
     }
@@ -78,7 +82,7 @@ public class PlayerScript : MonoBehaviour
             }
             else
             {
-                anim.SetBool("Block", true);
+                anim.SetBool("Block", false);
             }
             if (Input.GetButton("P1XButton"))
             {

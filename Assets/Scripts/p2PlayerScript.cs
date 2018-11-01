@@ -28,11 +28,15 @@ public class p2PlayerScript : MonoBehaviour
         thisAnim = GetComponent<RuntimeAnimatorController>();
         if (PlayerInfo.Player1char == "Pepe")
         {
-            thisAnim = Pepe;
+            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -12 / 10);
+            this.transform.localScale = new Vector2(7 / 10, 8 / 10);
+            this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
         }
         else if (PlayerInfo.Player1char == "Wick")
         {
-            thisAnim = Wick;
+            this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -1 / 3);
+            this.transform.localScale = new Vector2(-1, 11 / 10);
+            this.GetComponent<Animator>().runtimeAnimatorController = Wick;
         }
         anim = GetComponent<Animator>();
     }
