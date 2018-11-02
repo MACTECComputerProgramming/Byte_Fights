@@ -50,6 +50,7 @@ public class Winner : MonoBehaviour {
             if (swapscenenumber == 0)
             {
                 SceneManager.LoadScene("Main");
+                
             }
             else
             {
