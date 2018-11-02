@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        health = 100;
         theRB = GetComponent<Rigidbody2D>();
         thisAnim = GetComponent<RuntimeAnimatorController>();
         if (PlayerInfo.Player1char == "Pepe")

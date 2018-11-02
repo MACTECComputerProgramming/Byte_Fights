@@ -43,6 +43,8 @@ public class PlayerInfo : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        P1start = false;
+        P2start = false;
         DontDestroyOnLoad(this);
 	}
 	
