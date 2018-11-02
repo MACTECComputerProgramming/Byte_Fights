@@ -17,7 +17,8 @@ public class HealthScript : MonoBehaviour {
 	// Use this for initialization
     
 	void Start () {
-      
+        Player1HP.fillAmount = 1;
+        Player2Hp.fillAmount = 1;
 	}
 	
 	// Update is called once per frame

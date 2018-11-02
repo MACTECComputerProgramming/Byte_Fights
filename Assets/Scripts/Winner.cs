@@ -9,7 +9,7 @@ public class Winner : MonoBehaviour {
     public Text text;
     public Image player2HP;
     public Image player1HP;
-    public double swapscenenumber = 20;
+    public double swapscenenumber = 5;
 	// Use this for initialization
 	void Start () {
 
@@ -50,6 +50,7 @@ public class Winner : MonoBehaviour {
             if (swapscenenumber == 0)
             {
                 SceneManager.LoadScene("Main");
+                
             }
             else
             {
