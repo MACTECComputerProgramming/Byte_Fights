@@ -67,7 +67,6 @@
      <Compile Include="Assets\Scripts\p2PlayerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
-     <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\SelectPepe.cs" />
      <Compile Include="Assets\Scripts\SelectWick.cs" />
      <Compile Include="Assets\Scripts\timer.cs" />
