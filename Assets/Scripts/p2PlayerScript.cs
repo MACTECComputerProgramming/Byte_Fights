@@ -29,12 +29,20 @@ public class p2PlayerScript : MonoBehaviour
         thisAnim = GetComponent<RuntimeAnimatorController>();
         if (PlayerInfo.Player2char == "Pepe")
         {
+            if (PlayerInfo.Player1char == "Pepe")
+            {
+                this.GetComponent<SpriteRenderer>().color = Color.green;
+            }
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -1.2f);
             this.transform.localScale = new Vector2(-.7f , .8f);
             this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
         }
         else if (PlayerInfo.Player2char == "Wick")
         {
+            if (PlayerInfo.Player1char == "Wick")
+            {
+                this.GetComponent<SpriteRenderer>().color = Color.green;
+            }
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -.3f);
             this.GetComponent<BoxCollider2D>().size = new Vector2(2.5f, 5);
             this.transform.localScale = new Vector2(1, 1.1f);
@@ -50,7 +58,8 @@ public class p2PlayerScript : MonoBehaviour
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
-        if (anim.GetFloat("Stunned") <= 0)
+
+        if (!anim.GetBool("Punch") || !anim.GetBool("Block"))
         {
             if (Input.GetAxis("p2LeftJoystickHorizontal") > 0)
             {
@@ -95,10 +104,10 @@ public class p2PlayerScript : MonoBehaviour
 
                 //inset action
             }
-        }
-        else
-        {
-            anim.SetFloat("Stunned", anim.GetFloat("Stunned") - Time.deltaTime);
+            else
+            {
+                anim.SetFloat("Stunned", anim.GetFloat("Stunned") - Time.deltaTime);
+            }
         }
     }
         public void Knockback(Vector2 direction)

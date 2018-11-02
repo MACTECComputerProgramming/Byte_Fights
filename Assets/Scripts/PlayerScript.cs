@@ -51,22 +51,25 @@ public class PlayerScript : MonoBehaviour
         movespeed = movespeed * Input.GetAxis("LeftJoystickHorizontal");
         if (anim.GetFloat("Stunned") <= 0)
         {
-       
-        
-            if (Input.GetAxis("LeftJoystickHorizontal") == 1)
-            {
-                Player1.flipX = false;
-                theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
-            }
-            else if (Input.GetAxis("LeftJoystickHorizontal") == -1)
-            {
-                Player1.flipX = true;
-                theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
-            }
-            else
-            {
 
-                theRB.velocity = new Vector2(0, theRB.velocity.y);
+            if (!anim.GetBool("Punch") || !anim.GetBool("Block"))
+            {
+                
+                if (Input.GetAxis("LeftJoystickHorizontal") == 1)
+                {
+                    Player1.flipX = false;
+                    theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
+                }
+                else if (Input.GetAxis("LeftJoystickHorizontal") == -1)
+                {
+                    Player1.flipX = true;
+                    theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
+                }
+                else
+                {
+
+                    theRB.velocity = new Vector2(0, theRB.velocity.y);
+                }
             }
             if (Input.GetButton("P1AButton"))
             {
