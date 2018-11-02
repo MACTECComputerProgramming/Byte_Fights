@@ -19,6 +19,10 @@ public class timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timeLeft -= Time.deltaTime;
+        if(timeLeft <= 10)
+        {
+            text.color = Color.red;
+        }
         if (timeLeft < 1)
 
             timeLeft = 1;
