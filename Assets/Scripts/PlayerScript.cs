@@ -49,10 +49,10 @@ public class PlayerScript : MonoBehaviour
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("LeftJoystickHorizontal");
-        if (anim.GetFloat("Stunned") <= 0)
+        if (!anim.GetBool("Punch") || !anim.GetBool("Block") || anim.GetFloat("Stunned") <= 0)
         {
 
-            if (!anim.GetBool("Punch") || !anim.GetBool("Block"))
+            if ()
             {
                 
                 if (Input.GetAxis("LeftJoystickHorizontal") == 1)

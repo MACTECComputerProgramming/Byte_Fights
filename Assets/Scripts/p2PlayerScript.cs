@@ -58,57 +58,56 @@ public class p2PlayerScript : MonoBehaviour
 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
+        
+            if (!anim.GetBool("Punch") || !anim.GetBool("Block") || anim.GetFloat("Stunned") <= 0)
+            {
+                if (Input.GetAxis("p2LeftJoystickHorizontal") > 0)
+                {
+                    Player2.flipX = true;
+                    theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
+                }
+                else if (Input.GetAxis("p2LeftJoystickHorizontal") < 0)
+                {
+                    Player2.flipX = false;
+                    theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
+                }
+                else
+                {
+                    theRB.velocity = new Vector2(0, theRB.velocity.y);
+                }
+                if (Input.GetButton("P2AButton"))
+                {
+                    anim.SetBool("Punch", true);
+                    theRB.velocity = new Vector2(0, 0);
+                }
+                else
+                {
+                    anim.SetBool("Punch", false);
+                }
 
-        if (!anim.GetBool("Punch") || !anim.GetBool("Block"))
-        {
-            if (Input.GetAxis("p2LeftJoystickHorizontal") > 0)
-            {
-                Player2.flipX = true;
-                theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
-            }
-            else if (Input.GetAxis("p2LeftJoystickHorizontal") < 0)
-            {
-                Player2.flipX = false;
-                theRB.velocity = new Vector2(movespeed, theRB.velocity.y);
-            }
-            else
-            {
-                theRB.velocity = new Vector2(0, theRB.velocity.y);
-            }
-            if (Input.GetButton("P2AButton"))
-            {
-                anim.SetBool("Punch", true);
-                theRB.velocity = new Vector2(0, 0);
-            }
-            else
-            {
-                anim.SetBool("Punch", false);
-            }
+                if (Input.GetButton("P2BButton"))
+                {
+                    anim.SetBool("Block", true);
+                    //inset action
+                }
+                else
+                {
+                    anim.SetBool("Block", false);
+                }
+                if (Input.GetButton("P2XButton"))
+                {
+                    //inset action
 
-            if (Input.GetButton("P2BButton"))
-            {
-                anim.SetBool("Block", true);
-                //inset action
-            }
-            else
-            {
-                anim.SetBool("Block", false);
-            }
-            if (Input.GetButton("P2XButton"))
-            {
-                //inset action
+                }
+                if (Input.GetButton("P2YButton"))
+                {
 
-            }
-            if (Input.GetButton("P2YButton"))
-            {
-
-                //inset action
-            }
-            else
+                    //inset action
+                }
+            }else
             {
                 anim.SetFloat("Stunned", anim.GetFloat("Stunned") - Time.deltaTime);
             }
-        }
     }
         public void Knockback(Vector2 direction)
         {
