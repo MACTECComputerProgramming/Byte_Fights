@@ -10,11 +10,11 @@ public class P1HitDetect : MonoBehaviour {
         player1 = FindObjectOfType<PlayerScript>();
         if(PlayerInfo.Player1char == "Pepe")
         {
-            this.GetComponent<Transform>().position = new Vector2(7.15f, -0.08f);
+           //this.GetComponent<Transform>().localPosition = new Vector2(7.15f, -0.08f);
         }
         if(PlayerInfo.Player1char == "Wick")
         {
-            this.GetComponent<Transform>().position = new Vector2(3.15f, 1.81f);
+            //this.GetComponent<Transform>().localPosition = new Vector2(3.15f, 1.81f);
         }
 	}
 	

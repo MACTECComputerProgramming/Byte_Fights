@@ -303,7 +303,7 @@ Prefab:
     - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
         type: 2}
       propertyPath: m_Offset.y
-      value: -0.2
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 114619484356327286, guid: a99557211327c724b902a25e9f850467,
         type: 2}
@@ -343,9 +343,28 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 1645881364677626, guid: a99557211327c724b902a25e9f850467, type: 2}
+      propertyPath: m_Name
+      value: P1Pepe Hit Check
+      objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 61217443462647076, guid: a99557211327c724b902a25e9f850467,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a99557211327c724b902a25e9f850467, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &78895516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4724834827263634, guid: a99557211327c724b902a25e9f850467,
+    type: 2}
+  m_PrefabInternal: {fileID: 78895515}
 --- !u!1 &81260636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1082,65 @@ Transform:
   m_Father: {fileID: 501169474}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &777810233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1645881364677626, guid: a99557211327c724b902a25e9f850467,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777810234}
+  - component: {fileID: 777810236}
+  - component: {fileID: 777810235}
+  m_Layer: 0
+  m_Name: P2Wick Hit Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &777810234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4249744514361132, guid: a99557211327c724b902a25e9f850467,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 777810233}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.13, y: -1.55, z: 0}
+  m_LocalScale: {x: 1.4285713, y: 1.375, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2053606178}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &777810235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 777810233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58296ee453c8f704d8db24bb396a3617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 0}
+--- !u!58 &777810236
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 777810233}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.52, y: 2}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &787553334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,7 +1613,7 @@ GameObject:
   - component: {fileID: 908887416}
   - component: {fileID: 908887417}
   m_Layer: 0
-  m_Name: Hit Check
+  m_Name: P2Pepe Hit Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1548,7 +1626,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 908887414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.63, y: 1.81, z: 0}
+  m_LocalPosition: {x: 3.4, y: 1.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2053606178}
@@ -1577,7 +1655,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 908887414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d626c8867bb25143907432b63d39b28, type: 3}
+  m_Script: {fileID: 11500000, guid: 58296ee453c8f704d8db24bb396a3617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 0}
@@ -1950,6 +2028,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1030429222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1645881364677626, guid: a99557211327c724b902a25e9f850467,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1030429223}
+  - component: {fileID: 1030429225}
+  - component: {fileID: 1030429224}
+  m_Layer: 0
+  m_Name: P1Wick Hit Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1030429223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4249744514361132, guid: a99557211327c724b902a25e9f850467,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030429222}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.36, y: -0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 78895516}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030429224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030429222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d626c8867bb25143907432b63d39b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 0}
+--- !u!58 &1030429225
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030429222}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.52, y: 2}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &1052332408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4230,9 +4367,10 @@ Transform:
   m_GameObject: {fileID: 2053606176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.082, y: -0.761, z: 0}
-  m_LocalScale: {x: -0.7, y: 0.8, z: 1}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_Children:
   - {fileID: 908887415}
+  - {fileID: 777810234}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

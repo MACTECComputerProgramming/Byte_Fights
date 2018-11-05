@@ -59,7 +59,9 @@ public class p2PlayerScript : MonoBehaviour
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
         
-            if (!anim.GetBool("Punch") || !anim.GetBool("Block") || anim.GetFloat("Stunned") <= 0)
+            if (anim.GetFloat("Stunned") <= 0)
+            {
+            if (!anim.GetBool("Punch") || !anim.GetBool("Block"))
             {
                 if (Input.GetAxis("p2LeftJoystickHorizontal") > 0)
                 {
@@ -75,6 +77,7 @@ public class p2PlayerScript : MonoBehaviour
                 {
                     theRB.velocity = new Vector2(0, theRB.velocity.y);
                 }
+            }
                 if (Input.GetButton("P2AButton"))
                 {
                     anim.SetBool("Punch", true);
