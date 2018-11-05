@@ -34,7 +34,7 @@ public class P2HitDetect : MonoBehaviour {
 
                 Vector2 hitDirection = player1.transform.position - col.transform.position;
 
-                PlayerScript.anim.SetFloat("Stunned", .5f);
+                PlayerScript.anim.SetFloat("Stunned", .3f);
                 //hitDirection = hitDirection.normalized;
 
                 player1.Knockback(hitDirection);

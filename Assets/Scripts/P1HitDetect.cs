@@ -32,7 +32,7 @@ public class P1HitDetect : MonoBehaviour {
             {
                 Debug.Log("Hit");
                 p2PlayerScript.health -= PlayerScript.damage;
-                p2PlayerScript.anim.SetFloat("Stunned", .5f);
+                p2PlayerScript.anim.SetFloat("Stunned", .3f);
             }
         }
     }
