@@ -25,35 +25,43 @@ public class SelectPepe : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D coll)
     {
-        //Checks for Player 1's A Button Input
-        if(Input.GetButton("P1AButton"))
+        //Checks if the Player has locked in with X
+        if (PlayerInfo.P1lockedin == false)
         {
-
-            //Checks if object colliding is Player 1
-            if(coll.gameObject == player1)
+            //Checks for Player 1's A Button Input
+            if (Input.GetButton("P1AButton"))
             {
-                //Sets their character to Pepe in Fight Scene
-                PlayerInfo.Player1char = "Pepe";
-                //Enables Icon for the player to see what character is selected
-                p1Pepe.enabled = true;
-                //Displays Character image
-                p1Pepe.sprite = feelsgood;
+
+                //Checks if object colliding is Player 1
+                if (coll.gameObject == player1)
+                {
+                    //Sets their character to Pepe in Fight Scene
+                    PlayerInfo.Player1char = "Pepe";
+                    //Enables Icon for the player to see what character is selected
+                    p1Pepe.enabled = true;
+                    //Displays Character image
+                    p1Pepe.sprite = feelsgood;
+                }
             }
         }
-        //Checks for Player 2's A Button Input
-        if (Input.GetButton("P2AButton"))
+        //Checks if the Player has locked in with X
+        if (PlayerInfo.P2lockedin == false)
         {
-            //Checks if object colliding is Player 2
-            if (coll.gameObject == player2)
+            //Checks for Player 2's A Button Input
+            if (Input.GetButton("P2AButton"))
             {
-                //Sets their character to Pepe in Fight Scene
-                PlayerInfo.Player2char = "Pepe";
+                //Checks if object colliding is Player 2
+                if (coll.gameObject == player2)
+                {
+                    //Sets their character to Pepe in Fight Scene
+                    PlayerInfo.Player2char = "Pepe";
 
-                //Enables Icon for the player to see what character is selected
-                p2Pepe.enabled = true;
+                    //Enables Icon for the player to see what character is selected
+                    p2Pepe.enabled = true;
 
-                //Displays Character image
-                p2Pepe.sprite = feelsgood;
+                    //Displays Character image
+                    p2Pepe.sprite = feelsgood;
+                }
             }
         }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class P1Cursor : MonoBehaviour {
+   
     public string buttonName;
     private Transform thisTransform;
     private Rigidbody2D theRB;

@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 
 public class Winner : MonoBehaviour {
-    public Text text;
+    static public Text Winnertext;
     public Image player2HP;
     public Image player1HP;
     public double swapscenenumber = 5;
 	// Use this for initialization
 	void Start () {
 
-        text = GetComponent<Text>();
+        Winnertext = GetComponent<Text>();
         swapscenenumber = 5;
         
 	}
@@ -22,24 +22,10 @@ public class Winner : MonoBehaviour {
 	void Update () {
         
 
-        if (player2HP.fillAmount == 0)
-       {
-           text.text = "Player 1 Wins ";
-           //GameObject.Find("Player 2").transform.localScale = new Vector2(0, 0);
-           if (swapscenenumber == 0)
-           {
-                GameObject.Destroy(GameObject.Find("Assigner"));
-                SceneManager.LoadScene("Main");
-           }
-           else
-           {
-               swapscenenumber -= 1;
-           }
-       }
-        if(player1HP.fillAmount == 0)
+        if(player2HP.fillAmount == 0)
         {
-            text.text = "Player 2 Wins ";
-            //GameObject.Find("Player 1").transform.localScale = new Vector2(0, 0);
+            Winnertext.text = "Player 2 Wins ";
+            GameObject.Find("Player 1").transform.localScale = new Vector2(0, 0);
             if (swapscenenumber == 0)
             {
                 GameObject.Destroy(GameObject.Find("Assigner"));
@@ -51,20 +37,13 @@ public class Winner : MonoBehaviour {
             }
         }
 
-
-
-
-
-
-
-
-
         if (player1HP.fillAmount == 0)
         {
-            text.text = "Player 2 Wins ";
+            Winnertext.text = "Player 2 Wins ";
             GameObject.Find("Player 2").transform.localScale = new Vector3(0, 0, 0);
             if (swapscenenumber == 0)
             {
+                GameObject.Destroy(GameObject.Find("Assigner"));
                 SceneManager.LoadScene("Main");
                 
             }

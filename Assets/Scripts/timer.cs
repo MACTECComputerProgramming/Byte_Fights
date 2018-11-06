@@ -7,13 +7,15 @@ using UnityEngine.SceneManagement;
 
 
 public class timer : MonoBehaviour {
-    Text text;
+    Text timetext;
+    float waittime;
     public static float timeLeft = 60f;
 
 	// Use this for initialization
 	void Start () {
         timeLeft = 60f;
-        text = GetComponent<Text>();
+        waittime = 5;
+        timetext = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
@@ -21,16 +23,52 @@ public class timer : MonoBehaviour {
         timeLeft -= Time.deltaTime;
         if(timeLeft <= 10)
         {
-            text.color = Color.red;
+            timetext.color = Color.red;
         }
         if (timeLeft < 1)
 
             timeLeft = 1;
-        text.text = " " + Mathf.Round(timeLeft);
+        timetext.text = " " + Mathf.Round(timeLeft);
 
         if (timeLeft == 1)
-            SceneManager.LoadScene("Main");
+            if(PlayerScript.health > p2PlayerScript.health)
+            {
+                Winner.Winnertext.text = "Player 1 Wins";
+                if(waittime == 0)
+                {
+                    SceneManager.LoadScene("Main");
+                }
+                else
+                {
+                    waittime -= Time.deltaTime;
+                }
+            }
+        else if (p2PlayerScript.health > PlayerScript.health)
+        {
+            Winner.Winnertext.text = "Player 2 Wins";
+            if (waittime == 0)
+            {
+                SceneManager.LoadScene("Main");
+            }
+            else
+            {
+                waittime -= Time.deltaTime;
+            }
+        }
+        else if (PlayerScript.health == p2PlayerScript.health) {
 
-	
-	}
+                Winner.Winnertext.text = "Nobody Wins";
+                if (waittime == 0)
+                {
+                    SceneManager.LoadScene("Main");
+                }
+                else
+                {
+                    waittime -= Time.deltaTime;
+                }
+
+
+            }
+
+    }
 }
