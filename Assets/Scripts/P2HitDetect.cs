@@ -30,14 +30,13 @@ public class P2HitDetect : MonoBehaviour {
         {
             if (PlayerScript.anim.GetBool("Block") == false)
             {
+                PlayerScript.anim.SetBool("Block", false);
+
                 PlayerScript.health -= p2PlayerScript.damage;
 
                 Vector2 hitDirection = player1.transform.position - col.transform.position;
 
                 PlayerScript.anim.SetFloat("Stunned", .3f);
-                //hitDirection = hitDirection.normalized;
-
-                player1.Knockback(hitDirection);
             }
         }
     }
