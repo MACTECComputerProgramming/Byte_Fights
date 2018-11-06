@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerInfo : MonoBehaviour {
@@ -39,24 +40,40 @@ public class PlayerInfo : MonoBehaviour {
     static public bool P1start = false;
     static public bool P2start = false;
     bool fightstart = true;
-
+    public Image p1;
+    public Image p2;
+   static public bool P1lockedin;
+    static public bool P2lockedin;
 
     // Use this for initialization
     void Start () {
         P1start = false;
         P2start = false;
+        P1lockedin = false;
+        P2lockedin = false;
         DontDestroyOnLoad(this);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButton("P1XButton"))
+        if (player1char != null)
         {
-            P1start = true;
+            if (Input.GetButton("P1XButton") && P1lockedin == false)
+            {
+                P1start = true;
+                p1.color = Color.green;
+                P1lockedin = true;
+
+            }
         }
-        if (Input.GetButton("P2XButton"))
+        if (player2char != null)
         {
-            P2start = true;
+            if (Input.GetButton("P2XButton") && P2lockedin == false)
+            {
+                P2start = true;
+                p2.color = Color.green;
+                P2lockedin = true;
+            }
         }
         if((P1start == true && P2start == true )&& fightstart == true)
         {
