@@ -58,7 +58,6 @@
      <Compile Include="Assets\Scripts\exitProgram.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\loadScene.cs" />
-     <Compile Include="Assets\Scripts\nextScene.cs" />
      <Compile Include="Assets\Scripts\P1Cursor.cs" />
      <Compile Include="Assets\Scripts\P1HitDetect.cs" />
      <Compile Include="Assets\Scripts\P2Cursor.cs" />
