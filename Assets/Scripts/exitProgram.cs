@@ -6,6 +6,8 @@ public class exitProgram : MonoBehaviour {
     //instantiates game objects- cursors for player one and player two
     private GameObject player1;
     private GameObject player2;
+    private bool p1entered;
+    private bool p2entered;
 
     // Use this for initialization
     void Start()
@@ -15,30 +17,38 @@ public class exitProgram : MonoBehaviour {
         player2 = GameObject.Find("P2Cursor");
     }
 
-    //Checks if the box collider is triggered and stays in code until it is no longer true
-    private void OnTriggerStay2D(Collider2D coll)
-    {   //Log placed to check if code is working
-        Debug.Log("Entered");
+    private void Update()
+    {
         //Checks if player one's a button is pressed
         if (Input.GetButton("P1AButton"))
         {
-            //Log placed to check if code is working
-            Debug.Log("A Button");
-            //Checks if the game object colliding with the button is player one's cursor
-            if (coll.gameObject == player1)
-            {
+           
+
                 //calls method to exit game
                 QuitGame();
-            }
+            
         }
         //Checks if player two's a button is pressed
         if (Input.GetButton("P2AButton"))
-        {   //Checks if the game object colliding with the button is player two's cursor
-            if (coll.gameObject == player2)
-            {   
+        { 
                 //calls method to exit scene
                 QuitGame();
-            }
+        
+        }
+    }
+    //Checks if the box collider is triggered and stays in code until it is no longer true
+    private void OnTriggerStay2D(Collider2D coll)
+    {
+        //Checks if the game object colliding with the button is player one's cursor
+        if (coll.gameObject == player1)
+        {
+            p1entered = true;
+        }
+        
+  //Checks if the game object colliding with the button is player two's cursor
+            if (coll.gameObject == player2)
+         {
+            p2entered = true;
         }
     }
     //method to exit program

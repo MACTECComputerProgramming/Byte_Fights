@@ -31,6 +31,7 @@ public class p2PlayerScript : MonoBehaviour
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
             }
+            damage = 20;
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -1.2f);
             this.transform.localScale = new Vector2(-.7f , .8f);
             this.GetComponent<Animator>().runtimeAnimatorController = Pepe;
@@ -41,6 +42,7 @@ public class p2PlayerScript : MonoBehaviour
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
             }
+            damage = 15;
             this.GetComponent<BoxCollider2D>().offset = new Vector2(0, -.3f);
             this.GetComponent<BoxCollider2D>().size = new Vector2(2.5f, 5);
             this.transform.localScale = new Vector2(1, 1.1f);
@@ -86,10 +88,10 @@ public class p2PlayerScript : MonoBehaviour
                     anim.SetBool("Punch", false);
                 }
 
-                if (Input.GetButton("P2BButton") && P1HitDetect.p2BlockWait == 0)
+                if (Input.GetButton("P2BButton") && P1HitDetect.p2BlockWait <= 0)
                 {
                     anim.SetBool("Block", true);
-                    theRB.velocity = new Vector2(0, 0);
+                    //theRB.velocity = new Vector2(0, 0);
                 }
                 else
                 {

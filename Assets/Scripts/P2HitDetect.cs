@@ -20,13 +20,16 @@ public class P2HitDetect : MonoBehaviour {
         {
             if (PlayerScript.anim.GetBool("Block") == false)
             {
-                PlayerScript.anim.SetBool("Block", false);
-
-                p1BlockWait = 2;
 
                 PlayerScript.health -= p2PlayerScript.damage;
 
                 PlayerScript.anim.SetFloat("Stunned", .3f);
+            }
+            else
+            {
+                PlayerScript.anim.SetBool("Block", false);
+
+                p1BlockWait = 2;
             }
         }
     }
