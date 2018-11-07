@@ -11,7 +11,6 @@ public class p2PlayerScript : MonoBehaviour
     static public double health = 100;
     private Rigidbody2D theRB;
     public SpriteRenderer Player2;
-    RuntimeAnimatorController thisAnim;
     public RuntimeAnimatorController Pepe;
     public RuntimeAnimatorController Wick;
     static public Animator anim;
@@ -26,7 +25,6 @@ public class p2PlayerScript : MonoBehaviour
     {
         health = 100;
         theRB = GetComponent<Rigidbody2D>();
-        thisAnim = GetComponent<RuntimeAnimatorController>();
         if (PlayerInfo.Player2char == "Pepe")
         {
             if (PlayerInfo.Player1char == "Pepe")
@@ -52,17 +50,16 @@ public class p2PlayerScript : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {
-        //isHit = Physics2D.OverlapCircle(hitCheckPoint.position, hitCheckRadius, whatIsPlayer);
-
-
+    { 
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("p2LeftJoystickHorizontal");
         
             if (anim.GetFloat("Stunned") <= 0)
             {
+
             if (!anim.GetBool("Punch") || !anim.GetBool("Block"))
             {
+
                 if (Input.GetAxis("p2LeftJoystickHorizontal") > 0)
                 {
                     Player2.flipX = true;
@@ -78,6 +75,7 @@ public class p2PlayerScript : MonoBehaviour
                     theRB.velocity = new Vector2(0, theRB.velocity.y);
                 }
             }
+
                 if (Input.GetButton("P2AButton"))
                 {
                     anim.SetBool("Punch", true);
@@ -88,37 +86,21 @@ public class p2PlayerScript : MonoBehaviour
                     anim.SetBool("Punch", false);
                 }
 
-                if (Input.GetButton("P2BButton"))
+                if (Input.GetButton("P2BButton") && P1HitDetect.p2BlockWait == 0)
                 {
                     anim.SetBool("Block", true);
-                    //inset action
+                    theRB.velocity = new Vector2(0, 0);
                 }
                 else
                 {
+                    P1HitDetect.p2BlockWait -= Time.deltaTime;
                     anim.SetBool("Block", false);
                 }
-                if (Input.GetButton("P2XButton"))
-                {
-                    //inset action
-
-                }
-                if (Input.GetButton("P2YButton"))
-                {
-
-                    //inset action
-                }
-            }else
+            }
+            else
             {
                 anim.SetFloat("Stunned", anim.GetFloat("Stunned") - Time.deltaTime);
             }
     }
-        public void Knockback(Vector2 direction)
-        {
-            knockBackCounter = knockBackTime;
-
-            direction = new Vector2(1, 0);
-
-            theRB.velocity = direction * knockBackForce;
-        }
 }
 

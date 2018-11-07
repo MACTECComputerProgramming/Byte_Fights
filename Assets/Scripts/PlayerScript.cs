@@ -9,21 +9,15 @@ public class PlayerScript : MonoBehaviour
     static public double health = 100;
     static public Rigidbody2D theRB;
     public SpriteRenderer Player1;
-    RuntimeAnimatorController thisAnim;
     public RuntimeAnimatorController Pepe;
     public RuntimeAnimatorController Wick;
     static public Animator anim;
-
-    public float knockBackForce;
-    public float knockBackTime;
-    private float knockBackCounter;
 
     // Use this for initialization
     void Start()
     {
         health = 100;
         theRB = GetComponent<Rigidbody2D>();
-        thisAnim = GetComponent<RuntimeAnimatorController>();
         if (PlayerInfo.Player1char == "Pepe")
         {
             Debug.Log("Pepe");
@@ -45,8 +39,6 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-
         float movespeed = 1;
         movespeed = movespeed * Input.GetAxis("LeftJoystickHorizontal");
         if ( anim.GetFloat("Stunned") <= 0)
@@ -71,46 +63,32 @@ public class PlayerScript : MonoBehaviour
                     theRB.velocity = new Vector2(0, theRB.velocity.y);
                 }
             }
+
             if (Input.GetButton("P1AButton"))
             {
                 anim.SetBool("Punch", true);
-                //theRB.velocity = new Vector2(0, 0);
+                theRB.velocity = new Vector2(0, 0);
 
             }
             else
             {
                 anim.SetBool("Punch", false);
             }
-            if (Input.GetButton("P1BButton"))
+
+            if (Input.GetButton("P1BButton") && P2HitDetect.p1BlockWait == 0)
             {
                 anim.SetBool("Block", true);
-
+                theRB.velocity = new Vector2(0, 0);
             }
             else
             {
+                P2HitDetect.p1BlockWait -= Time.deltaTime;
                 anim.SetBool("Block", false);
-            }
-            if (Input.GetButton("P1XButton"))
-            {
-
-
-            }
-            if (Input.GetButton("P1YButton"))
-            {
-
-
             }
         }
         else
         {
             anim.SetFloat("Stunned", anim.GetFloat("Stunned") - Time.deltaTime);
         }
-
-        
     }
-        public void Knockback(Vector2 direction)
-        {
-        knockBackCounter = knockBackTime;
-        theRB.velocity = direction * knockBackForce;
-        }
 }

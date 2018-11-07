@@ -25,7 +25,7 @@ public class Winner : MonoBehaviour {
         if(player2HP.fillAmount == 0)
         {
             Winnertext.text = "Player 2 Wins ";
-            GameObject.Find("Player 1").transform.localScale = new Vector2(0, 0);
+            GameObject.Find("Player 2").transform.localScale = new Vector2(0, 0);
             if (swapscenenumber == 0)
             {
                 GameObject.Destroy(GameObject.Find("Assigner"));
@@ -33,14 +33,14 @@ public class Winner : MonoBehaviour {
             }
             else
             {
-                swapscenenumber -= 1;
+                swapscenenumber -= Time.deltaTime;
             }
         }
 
         if (player1HP.fillAmount == 0)
         {
             Winnertext.text = "Player 2 Wins ";
-            GameObject.Find("Player 2").transform.localScale = new Vector3(0, 0, 0);
+            GameObject.Find("Player 1").transform.localScale = new Vector3(0, 0, 0);
             if (swapscenenumber == 0)
             {
                 GameObject.Destroy(GameObject.Find("Assigner"));
@@ -49,7 +49,7 @@ public class Winner : MonoBehaviour {
             }
             else
             {
-                swapscenenumber -= 1;
+                swapscenenumber -= Time.deltaTime;
             }
            
         }

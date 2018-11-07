@@ -27,14 +27,14 @@ public class timer : MonoBehaviour {
         }
         if (timeLeft < 1)
 
-            timeLeft = 1;
+            timeLeft = 0;
         timetext.text = " " + Mathf.Round(timeLeft);
 
-        if (timeLeft == 1)
+        if (timeLeft < 1)
             if(PlayerScript.health > p2PlayerScript.health)
             {
                 Winner.Winnertext.text = "Player 1 Wins";
-                if(waittime == 0)
+                if(waittime <= 0)
                 {
                     SceneManager.LoadScene("Main");
                 }
@@ -46,7 +46,7 @@ public class timer : MonoBehaviour {
         else if (p2PlayerScript.health > PlayerScript.health)
         {
             Winner.Winnertext.text = "Player 2 Wins";
-            if (waittime == 0)
+            if (waittime <= 0)
             {
                 SceneManager.LoadScene("Main");
             }
@@ -58,7 +58,7 @@ public class timer : MonoBehaviour {
         else if (PlayerScript.health == p2PlayerScript.health) {
 
                 Winner.Winnertext.text = "Nobody Wins";
-                if (waittime == 0)
+                if (waittime <= 0)
                 {
                     SceneManager.LoadScene("Main");
                 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class P1HitDetect : MonoBehaviour {
 
-    
+    static public float p2BlockWait;
 	// Use this for initialization
 	void Start() { 
 	}
@@ -22,7 +22,11 @@ public class P1HitDetect : MonoBehaviour {
             if (p2PlayerScript.anim.GetBool("Block") == false)
             {
                 p2PlayerScript.anim.SetBool("Block", false);
+
+                p2BlockWait = 2;
+
                 p2PlayerScript.health -= PlayerScript.damage;
+
                 p2PlayerScript.anim.SetFloat("Stunned", .3f);
             }
         }

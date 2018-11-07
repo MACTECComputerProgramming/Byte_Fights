@@ -47,6 +47,8 @@ public class PlayerInfo : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        player1char = null;
+        player2char = null;
         P1start = false;
         P2start = false;
         P1lockedin = false;
