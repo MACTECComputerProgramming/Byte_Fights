@@ -20,7 +20,7 @@ public class exitProgram : MonoBehaviour {
     private void Update()
     {
         //Checks if player one's a button is pressed
-        if (Input.GetButton("P1AButton"))
+        if (Input.GetButton("P1AButton") && p1entered)
         {
            
 
@@ -29,7 +29,7 @@ public class exitProgram : MonoBehaviour {
             
         }
         //Checks if player two's a button is pressed
-        if (Input.GetButton("P2AButton"))
+        if (Input.GetButton("P2AButton") && p2entered)
         { 
                 //calls method to exit scene
                 QuitGame();
@@ -49,6 +49,17 @@ public class exitProgram : MonoBehaviour {
             if (coll.gameObject == player2)
          {
             p2entered = true;
+        }
+    }
+    private void OnTriggerExit(Collider coll)
+    {
+        if (coll.gameObject == player1)
+        {
+            p1entered = false;
+        }
+        else if(coll.gameObject == player2)
+        {
+            p2entered = false;
         }
     }
     //method to exit program
