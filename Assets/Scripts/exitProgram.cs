@@ -17,39 +17,33 @@ public class exitProgram : MonoBehaviour {
         player2 = GameObject.Find("P2Cursor");
     }
 
-<<<<<<< HEAD
+
     //Checks if the box collider is triggered and stays in code until it is no longer true
     private void OnTriggerStay2D(Collider2D coll)
-    {  
-=======
-    private void Update()
     {
->>>>>>> 1a395e27610ba5ae6d56ed798746ded917b1674c
         //Checks if player one's a button is pressed
         if (Input.GetButton("P1AButton") && p1entered)
         {
-<<<<<<< HEAD
+
             //Checks if the game object colliding with the button is player one's cursor
             if (coll.gameObject == player1)
             {
-=======
-           
 
->>>>>>> 1a395e27610ba5ae6d56ed798746ded917b1674c
                 //calls method to exit game
                 QuitGame();
-            
-        }
-        //Checks if player two's a button is pressed
-        if (Input.GetButton("P2AButton") && p2entered)
-        { 
+
+            }
+            //Checks if player two's a button is pressed
+            if (Input.GetButton("P2AButton") && p2entered)
+            {
                 //calls method to exit scene
                 QuitGame();
-        
+
+            }
         }
     }
     //Checks if the box collider is triggered and stays in code until it is no longer true
-    private void OnTriggerStay2D(Collider2D coll)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
         //Checks if the game object colliding with the button is player one's cursor
         if (coll.gameObject == player1)

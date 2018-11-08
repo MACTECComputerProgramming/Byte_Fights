@@ -20,35 +20,32 @@ public class loadScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
+
 
     }
 
     //detects when the box collider is triggered
     private void OnTriggerStay2D(Collider2D coll)
     {
-        
 
-=======
->>>>>>> 1a395e27610ba5ae6d56ed798746ded917b1674c
+
+
         //Checks if Player One's A button is pressed.
         if (Input.GetButton("P1AButton"))
         {
-            
-<<<<<<< HEAD
+
             //Checks if the object colliding with the button is player one's cursor
             if (coll.gameObject == player1)
             {
-=======
->>>>>>> 1a395e27610ba5ae6d56ed798746ded917b1674c
                 //loads the Character Select scene
                 SceneManager.LoadScene("Character_Select");
-        }
-        //Checks if Player Two's A button is pressed
-        if (Input.GetButton("P2AButton"))
-        {
+            }
+            //Checks if Player Two's A button is pressed
+            if (Input.GetButton("P2AButton"))
+            {
                 //loads the Character Select scene
                 SceneManager.LoadScene("Character_Select");
+            }
         }
     }
 
