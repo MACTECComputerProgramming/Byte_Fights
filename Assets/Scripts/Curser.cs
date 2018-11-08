@@ -9,7 +9,7 @@ public class Curser : MonoBehaviour {
     public SpriteRenderer Player1;
 	// Use this for initialization
 	void Start () {
-		
+        theRB.GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame

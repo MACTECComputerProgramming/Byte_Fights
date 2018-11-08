@@ -10,6 +10,8 @@ public class SelectPepe : MonoBehaviour {
     public Image p1Pepe;
     public Image p2Pepe;
     public Sprite feelsgood;
+    public bool p1entered;
+    public bool p2entered;
     
 
 	// Use this for initialization
@@ -20,21 +22,10 @@ public class SelectPepe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       
-	}
-
-    private void OnTriggerStay2D(Collider2D coll)
-    {
-        //Checks if the Player has locked in with X
-        if (PlayerInfo.P1lockedin == false)
-        {
-            //Checks for Player 1's A Button Input
-            if (Input.GetButton("P1AButton"))
-            {
-
-                //Checks if object colliding is Player 1
-                if (coll.gameObject == player1)
+                //Checks for Player 1's A Button Input
+                if (Input.GetButton("P1AButton") && p1entered)
                 {
+
                     //Sets their character to Pepe in Fight Scene
                     PlayerInfo.Player1char = "Pepe";
                     //Enables Icon for the player to see what character is selected
@@ -42,17 +33,9 @@ public class SelectPepe : MonoBehaviour {
                     //Displays Character image
                     p1Pepe.sprite = feelsgood;
                 }
-            }
-        }
-        //Checks if the Player has locked in with X
-        if (PlayerInfo.P2lockedin == false)
-        {
-            //Checks for Player 2's A Button Input
-            if (Input.GetButton("P2AButton"))
-            {
-                //Checks if object colliding is Player 2
-                if (coll.gameObject == player2)
-                {
+                //Checks for Player 2's A Button Input 
+            if (Input.GetButton("P2AButton") && p2entered)
+            {                    
                     //Sets their character to Pepe in Fight Scene
                     PlayerInfo.Player2char = "Pepe";
 
@@ -61,8 +44,39 @@ public class SelectPepe : MonoBehaviour {
 
                     //Displays Character image
                     p2Pepe.sprite = feelsgood;
-                }
             }
+	}
+
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        //Checks if the Player has locked in with X
+        if (PlayerInfo.P1lockedin == false)
+        { 
+            //Checks if object colliding is Player 1
+            if (coll.gameObject == player1)
+                {
+                p1entered = true;
+            }
+        }
+        //Checks if the Player has locked in with X
+        if (PlayerInfo.P2lockedin == false)
+        {
+               //Checks if object colliding is Player 2
+                if (coll.gameObject == player2)
+                {
+                p2entered = true;
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D coll)
+    {
+        if (coll.gameObject == player2)
+        {
+            p2entered = false;
+        }
+        if (coll.gameObject == player1)
+        {
+            p1entered = false;
         }
     }
 }
