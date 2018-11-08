@@ -56,7 +56,6 @@
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\countdown.cs" />
      <Compile Include="Assets\Scripts\Curser.cs" />
-     <Compile Include="Assets\Scripts\exitButtonScript.cs" />
      <Compile Include="Assets\Scripts\exitProgram.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\loadScene.cs" />

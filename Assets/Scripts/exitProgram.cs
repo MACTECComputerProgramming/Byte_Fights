@@ -17,13 +17,10 @@ public class exitProgram : MonoBehaviour {
 
     //Checks if the box collider is triggered and stays in code until it is no longer true
     private void OnTriggerStay2D(Collider2D coll)
-    {   //Log placed to check if code is working
-        Debug.Log("Entered");
+    {  
         //Checks if player one's a button is pressed
         if (Input.GetButton("P1AButton"))
         {
-            //Log placed to check if code is working
-            Debug.Log("A Button");
             //Checks if the game object colliding with the button is player one's cursor
             if (coll.gameObject == player1)
             {
@@ -46,8 +43,7 @@ public class exitProgram : MonoBehaviour {
     {
         //exits program
         Application.Quit();
-        Debug.Log("Game is exiting");
-        //just to check if it's working.
+       
     }
 
 
