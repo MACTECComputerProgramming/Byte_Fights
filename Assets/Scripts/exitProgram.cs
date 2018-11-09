@@ -19,46 +19,52 @@ public class exitProgram : MonoBehaviour {
 
     private void Update()
     {
-        //Checks if player one's a button is pressed
+
+        //Checks if player one's a button is pressed & if player 2 has entered the BoxCollider2D
         if (Input.GetButton("P1AButton") && p1entered)
         {
-           
-
-                //calls method to exit game
-                QuitGame();
-            
+            //calls method to exit game
+            QuitGame();
         }
-        //Checks if player two's a button is pressed
+            //Checks if player two's a button is pressed & if player 2 has entered the BoxCollider2D
         if (Input.GetButton("P2AButton") && p2entered)
-        { 
-                //calls method to exit scene
-                QuitGame();
-        
+        {
+            //calls method to exit scene
+            QuitGame();
+
         }
     }
+    
     //Checks if the box collider is triggered and stays in code until it is no longer true
-    private void OnTriggerStay2D(Collider2D coll)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
         //Checks if the game object colliding with the button is player one's cursor
         if (coll.gameObject == player1)
         {
+            //Tells the Script that Player 1 has entered the BoxCollider2D
             p1entered = true;
         }
         
-  //Checks if the game object colliding with the button is player two's cursor
-            if (coll.gameObject == player2)
+        //Checks if the game object colliding with the button is player two's cursor
+         if (coll.gameObject == player2)
          {
+            //Tells the script that Player 2 has entered the BoxCollider2D      
             p2entered = true;
         }
     }
+
     private void OnTriggerExit(Collider coll)
     {
+        //Checks if the game object colliding with the button is player one's cursor
         if (coll.gameObject == player1)
         {
+            //Tells the Script that Player 1 has entered the BoxCollider2D
             p1entered = false;
         }
+        //Checks if the game object colliding with the button is player two's cursor
         else if(coll.gameObject == player2)
         {
+            //Tells the Script that Player 2 has entered the BoxCollider2D
             p2entered = false;
         }
     }
@@ -67,8 +73,7 @@ public class exitProgram : MonoBehaviour {
     {
         //exits program
         Application.Quit();
-        Debug.Log("Game is exiting");
-        //just to check if it's working.
+       
     }
 
 
