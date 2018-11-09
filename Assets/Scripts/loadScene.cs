@@ -34,8 +34,9 @@ public class loadScene : MonoBehaviour
         //Checks if Player Two's A button is pressed & if player 2 has entered the BoxCollider2D
         if (Input.GetButton("P2AButton") && p2entered)
         {
-           //loads the Character Select scene
-           SceneManager.LoadScene("Character_Select");
+            //loads the Character Select scene
+            SceneManager.LoadScene("Character_Select");
+
         }
     }
 
